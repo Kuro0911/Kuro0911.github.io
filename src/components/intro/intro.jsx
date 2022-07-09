@@ -1,10 +1,10 @@
 import React from "react";
-import "./intro.scss";
+import { IntroWrapper } from "./intro.style";
 
-export default function Intro() {
+export const Intro = () => {
   return (
-    <div className="intro" id="intro">
+    <IntroWrapper>
       <h1>Hi my name is Kuro</h1>
-    </div>
+    </IntroWrapper>
   );
-}
+};
