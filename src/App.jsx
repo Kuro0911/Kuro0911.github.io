@@ -2,13 +2,12 @@ import React from "react";
 import { useState } from "react";
 import Topbar from "./components/topbar/topbar";
 import Contact from "./components/contact/Contact";
-import Portfolio from "./components/portfolio/portfolio";
 import Projects from "./components/Projects/projects";
 import About from "./components/about/about";
 import Menu from "./components/menu/menu";
-import Skills from "./components/skills/skills";
 import "./App.scss";
 import { Intro } from "./components/intro/intro";
+import { Work } from "./components/work/work";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,8 +18,7 @@ function App() {
       <div className="sections">
         <Intro />
         <About />
-        <Portfolio />
-        <Skills />
+        <Work />
         <Projects />
         <Contact />
       </div>
