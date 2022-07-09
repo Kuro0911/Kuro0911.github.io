@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const WorkWrapper = styled.div`
+const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: #09192f;
@@ -10,6 +10,7 @@ export const Container = styled.div`
   width: 50%;
   text-align: center;
 `;
+
 export const JpWrapper = styled.div`
   margin-bottom: ${(props) => (props.text === "コンタクト" ? "-1.50%" : "0")};
   text {
@@ -18,4 +19,4 @@ export const JpWrapper = styled.div`
     font-size: 1.7vw;
   }
 `;
-export default WorkWrapper;
+export default AboutWrapper;

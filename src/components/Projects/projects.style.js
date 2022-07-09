@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const WorkWrapper = styled.div`
+const ProjectWrapper = styled.div`
   display: flex;
   justify-content: center;
   background-color: #09192f;
@@ -18,4 +18,4 @@ export const JpWrapper = styled.div`
     font-size: 1.7vw;
   }
 `;
-export default WorkWrapper;
+export default ProjectWrapper;
