@@ -1,10 +1,21 @@
 import React from "react";
-import { IntroWrapper } from "./intro.style";
+import IntroWrapper, {
+  Container,
+  GreetContainer,
+  NameContainer,
+} from "./intro.style";
 
 export const Intro = () => {
   return (
-    <IntroWrapper>
-      <h1>Hi my name is Kuro</h1>
+    <IntroWrapper id="intro">
+      <Container>
+        <GreetContainer>
+          <text>Hello everyone i am</text>
+        </GreetContainer>
+        <NameContainer>
+          <text className="head">Dhananjai Sharma</text>
+        </NameContainer>
+      </Container>
     </IntroWrapper>
   );
 };
