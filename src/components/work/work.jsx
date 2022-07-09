@@ -3,7 +3,7 @@ import { WorkWrapper } from "./work.style";
 
 export const Work = () => {
   return (
-    <WorkWrapper>
+    <WorkWrapper id="work">
       <h1>work shit</h1>
     </WorkWrapper>
   );

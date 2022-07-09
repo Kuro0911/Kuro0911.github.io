@@ -8,6 +8,7 @@ import Menu from "./components/menu/menu";
 import "./App.scss";
 import { Intro } from "./components/intro/intro";
 import { Work } from "./components/work/work";
+import { Social } from "./components/Social/social";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Social />
       <div className="sections">
         <Intro />
         <About />

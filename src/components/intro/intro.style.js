@@ -33,6 +33,7 @@ export const NameContainer = styled.div`
   .lname {
     font-size: 7vw;
     color: #ccd6f6;
+    margin-left: ${(props) => (props.text === "ダナンジャイ" ? "-2.45%" : "0")};
   }
 `;
 

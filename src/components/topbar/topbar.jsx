@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import "./topbar.scss";
+import Button from "@mui/material/Button";
 export default function Topbar({ menuOpen, setMenuOpen }) {
-  const [text, setText] = useState("黒");
+  const styles = {
+    "&.MuiButton-outlined": {
+      borderColor: "#64ffda",
+    },
+  };
+  const [text, setText] = useState("黒.");
   const handleChange = () => {
-    text === "黒" ? setText("KURO.") : setText("黒");
+    text === "黒." ? setText("KURO.") : setText("黒.");
+  };
+  const handleClick = () => {
+    console.log("resume");
   };
   return (
     <div className={"topbar " + (menuOpen && "active")}>
@@ -13,13 +22,33 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             {text}
           </a>
         </div>
-        {/* <div className="right">
-                    <div className="borgir" onClick={()=>setMenuOpen(!menuOpen)}>
+        <div className="right">
+          <a href="#about" className="menuText">
+            <text className="kanji">一</text> About
+          </a>
+          <a href="#work" className="menuText">
+            <text className="kanji">二</text> Experience
+          </a>
+          <a href="#projects" className="menuText">
+            <text className="kanji">三</text> Projects
+          </a>
+          <a href="#contact" className="menuText">
+            <text className="kanji">四</text> Contact
+          </a>
+          <Button
+            variant="outlined"
+            onClick={handleClick}
+            className="btn"
+            sx={styles}
+          >
+            <text className="menuTextbtn">resume</text>
+          </Button>
+          {/* <div className="borgir" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className='Line1'></span>
                         <span className='Line2'></span>
                         <span className='Line3'></span>
-                    </div>
-                </div> */}
+                    </div> */}
+        </div>
       </div>
     </div>
   );
