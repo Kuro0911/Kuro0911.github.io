@@ -22,7 +22,7 @@ export const Social = () => {
       <MailIcon
         className="icon"
         onClick={() => {
-          window.open("");
+          window.location.href = "mailto:dhananjaisharma09@gmail.com";
         }}
       />
       <div className="line"></div>>

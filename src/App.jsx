@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import Topbar from "./components/topbar/topbar";
-import Contact from "./components/contact/Contact";
 import Projects from "./components/Projects/projects";
 import About from "./components/about/about";
 import Menu from "./components/menu/menu";
@@ -9,6 +8,7 @@ import "./App.scss";
 import { Intro } from "./components/intro/intro";
 import { Work } from "./components/work/work";
 import { Social } from "./components/Social/social";
+import { Contact } from "./components/contact/Contact";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
