@@ -6,16 +6,22 @@ const ProjectWrapper = styled.div`
   background-color: #09192f;
 `;
 export const Container = styled.div`
-  margin-top: 10%;
-  width: 50%;
+  background-color: #09192f;
+  margin-top: 2%;
+  width: 75%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
 `;
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "-1.50%" : "0")};
+  margin-bottom: ${(props) => (props.text === "コンタクト" ? "5%" : "8%")};
   text {
     font-family: monospace;
     color: #64ffda;
     font-size: 1.7vw;
   }
 `;
+
 export default ProjectWrapper;

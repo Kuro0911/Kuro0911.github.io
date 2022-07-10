@@ -21,7 +21,7 @@ function App() {
         <Intro />
         <About />
         <Work />
-        <Projects />
+        <Projects className="long" />
         <Contact />
       </div>
     </div>

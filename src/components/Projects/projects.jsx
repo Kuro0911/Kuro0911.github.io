@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CarouselModal } from "./carousel/Carousel";
 import ProjectWrapper, { Container, JpWrapper } from "./projects.style";
 
 export const Projects = () => {
@@ -12,6 +13,7 @@ export const Projects = () => {
         <JpWrapper onPointerEnter={handleChange} text={text}>
           <text>{text}</text>
         </JpWrapper>
+        <CarouselModal />
       </Container>
     </ProjectWrapper>
   );
