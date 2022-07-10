@@ -9,8 +9,8 @@ export const About = () => {
   return (
     <AboutWrapper id="about">
       <Container>
-        <JpWrapper onPointerEnter={handleChange} text={text}>
-          <text>{text}</text>
+        <JpWrapper text={text}>
+          <text onPointerEnter={handleChange}>{text}</text>
         </JpWrapper>
       </Container>
     </AboutWrapper>

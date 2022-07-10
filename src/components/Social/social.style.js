@@ -6,7 +6,7 @@ export const SocialWrapper = styled.div`
   z-index: 3;
   bottom: 0;
   height: 40%;
-  background-color: #09192f;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;

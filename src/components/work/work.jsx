@@ -11,8 +11,8 @@ export const Work = () => {
   return (
     <WorkWrapper id="work">
       <Container>
-        <JpWrapper onPointerEnter={handleChange} text={text}>
-          <text>{text}</text>
+        <JpWrapper text={text}>
+          <text onPointerEnter={handleChange}>{text}</text>
         </JpWrapper>
       </Container>
     </WorkWrapper>

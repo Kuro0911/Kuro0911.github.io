@@ -16,8 +16,8 @@ export const Contact = () => {
   return (
     <ContactWrapper id="contact">
       <Container>
-        <JpWrapper onPointerEnter={handleChange} text={text}>
-          <text>{text}</text>
+        <JpWrapper text={text}>
+          <text onPointerEnter={handleChange}>{text}</text>
         </JpWrapper>
         <>
           <HeadWrapper>

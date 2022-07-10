@@ -6,7 +6,7 @@ const WorkWrapper = styled.div`
   background-color: #09192f;
 `;
 export const Container = styled.div`
-  margin-top: 10%;
+  margin-top: 2%;
   width: 50%;
   text-align: center;
 `;
