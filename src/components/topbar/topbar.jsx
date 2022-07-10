@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./topbar.scss";
 import Button from "@mui/material/Button";
+import mypdf from "./utils/Dhananjai-sharma-resume.pdf";
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const styles = {
     "&.MuiButton-outlined": {
@@ -12,7 +13,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     text === "黒." ? setText("KURO.") : setText("黒.");
   };
   const handleClick = () => {
-    console.log("resume");
+    window.open(mypdf);
   };
   return (
     <div className={"topbar " + (menuOpen && "active")}>
