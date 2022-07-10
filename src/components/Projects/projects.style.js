@@ -8,7 +8,7 @@ const ProjectWrapper = styled.div`
 export const Container = styled.div`
   background-color: #09192f;
   margin-top: 2%;
-  width: 75%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ export const Container = styled.div`
   height: fit-content;
 `;
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "5%" : "8%")};
+  margin-bottom: ${(props) => (props.text === "コンタクト" ? "1%" : "3%")};
   text {
     font-family: monospace;
     color: #64ffda;

@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Wrapper from "./Carousel.style";
 import Shiba from "./images/shiba.png";
 import Sort from "./images/sort.png";
+import Wechat from "./images/wechat.png";
 import Netflix from "./images/netflix.png";
 import Image from "mui-image";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -30,7 +31,9 @@ export const CarouselModal = () => {
             </div>
             <div className="right">
               <div className="heading">
-                <text>Shiba The crypto bot</text>
+                <a href="https://kuro0911.github.io/Shiba---A-chat-Bot/">
+                  Shiba The crypto bot
+                </a>
               </div>
               <br />
               <div className="about">
@@ -75,7 +78,7 @@ export const CarouselModal = () => {
             </div>
             <div className="right">
               <div className="heading">
-                <text>SortViz</text>
+                <a href="https://relaxed-jelly-706d87.netlify.app/">SortViz</a>
               </div>
               <br />
               <div className="about">
@@ -120,7 +123,9 @@ export const CarouselModal = () => {
             </div>
             <div className="right">
               <div className="heading">
-                <text>Netflix Clone</text>
+                <a href="https://kuro0911.github.io/netflix-clone/">
+                  Netflix Clone
+                </a>
               </div>
               <br />
               <div className="about">
@@ -152,6 +157,45 @@ export const CarouselModal = () => {
                   className="goto"
                   href="https://kuro0911.github.io/netflix-clone/"
                 >
+                  <LaunchIcon className="icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className="container">
+            <div className="left">
+              <Image src={Wechat} width={500} height={400} duration={0} />
+            </div>
+            <div className="right">
+              <div className="heading">
+                <a href="https://wechat-bykuro.web.app/">We Chat</a>
+              </div>
+              <br />
+              <div className="about">
+                <p>
+                  Do we make money or does money make us? Chezwich. I have never
+                  known a Jack that was in good enough shape to name
+                  bodybuilding after him. Do we make money or does money make
+                  us? Chezwich. This is a true fact: I never had a fear of
+                  heights until I fell off a roof. This is a true fact: I never
+                  had a fear of heights until I fell off a roof.{" "}
+                </p>
+              </div>
+              <br />
+              <div className="tags">
+                <span>CryptoCurrency</span>
+                <span>JavaSript</span>
+                <span>ReactJS</span>
+                <span>ChatBot</span>
+              </div>
+              <br />
+              <div className="gotoContainer">
+                <a className="goto" href="https://github.com/Kuro0911/WeChat">
+                  <GitHubIcon className="icon" />
+                </a>
+                <a className="goto" href="https://wechat-bykuro.web.app/">
                   <LaunchIcon className="icon" />
                 </a>
               </div>

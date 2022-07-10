@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   .wrap {
-    width: 70vw;
+    width: 95vw;
     height: 60vh;
     .carousel-inner {
       min-height: 60vh;
@@ -16,21 +16,39 @@ const Wrapper = styled.div`
   }
   .left {
     width: 50%;
-    margin-right: 3%;
+    margin-left: 10%;
   }
   .right {
     width: 50%;
+    margin-right: 5%;
   }
   .heading {
-    text-align: left;
-    text {
+    a {
+      text-decoration: none;
+      color: inherit;
       font-size: xx-large;
       font-family: monospace !important;
+      background: linear-gradient(
+          to right,
+          rgb(100 200 200 / 0%),
+          rgb(100 200 200 / 0%)
+        ),
+        linear-gradient(
+          to right,
+          rgba(100, 200, 200, 1),
+          rgba(100, 200, 200, 1)
+        );
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+      cursor: pointer;
     }
-    color: #ccd6f6;
-  }
-  .heading:hover {
-    color: #62fad6;
+    a:hover {
+      background-size: 0 3px, 100% 3px;
+    }
+    text-align: left;
+    color: #64ffda;
   }
   .about {
     text-align: left;
