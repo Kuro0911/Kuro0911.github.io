@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WorkWrapper, { Container, JpWrapper } from "./work.style";
+import { WorkModal } from "./workModal/workModal";
 
 export const Work = () => {
   const [text1, setText1] = useState("Experience");
@@ -20,6 +21,7 @@ export const Work = () => {
           <text> / </text>
           <text onPointerEnter={handleChange2}>{text2}</text>
         </JpWrapper>
+        <WorkModal />
       </Container>
     </WorkWrapper>
   );
