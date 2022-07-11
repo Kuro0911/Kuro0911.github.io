@@ -1,28 +1,38 @@
 import styled from "styled-components";
 
 const InternWrapper = styled.div`
-  background-color: white;
+  text-align: left;
+  background-color: #09192f;
+  color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
 `;
 
 export const ProgrammingWrap = styled.div`
-  background-color: red;
+  text-align: left;
+  background-color: #09192f;
+  color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
 `;
 export const WebWrap = styled.div`
-  background-color: green;
+  text-align: left;
+  background-color: #09192f;
+  color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
 `;
 export const CourseWrap = styled.div`
-  background-color: orange;
+  text-align: left;
+  background-color: #09192f;
+  color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
 `;
 export const OtherWrap = styled.div`
-  background-color: purple;
+  text-align: left;
+  background-color: #09192f;
+  color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
 `;

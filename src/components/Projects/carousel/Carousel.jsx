@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Wrapper from "./Carousel.style";
-import Shiba from "./images/shiba.png";
-import Sort from "./images/sort.png";
-import Wechat from "./images/wechat.png";
-import Netflix from "./images/netflix.png";
-import Image from "mui-image";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
+import ReactPlayer from "react-player";
+import ShibaVid from "./videos/ShibaVid.mp4";
+import SortinVid from "./videos/SortinVid.mp4";
+import WechatVid from "./videos/WechatVid.mp4";
+import NetflixVid from "./videos/NetflixVid.mp4";
 
 export const CarouselModal = () => {
   const [index, setIndex] = useState(0);
-
+  const [shibaPlay, setShibaPlay] = useState(false);
+  const [sortPlay, setSortPlay] = useState(false);
+  const [weChatPlay, setWeChatPlay] = useState(false);
+  const [netflixPlay, setNetflixPlay] = useState(false);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -27,7 +30,12 @@ export const CarouselModal = () => {
         <Carousel.Item>
           <div className="container">
             <div className="left">
-              <Image src={Shiba} width={500} height={400} duration={0} />
+              <span
+                onMouseEnter={() => setShibaPlay(true)}
+                onMouseLeave={() => setShibaPlay(false)}
+              >
+                <ReactPlayer url={ShibaVid} playing={shibaPlay} loop />
+              </span>
             </div>
             <div className="right">
               <div className="heading">
@@ -74,7 +82,12 @@ export const CarouselModal = () => {
         <Carousel.Item>
           <div className="container">
             <div className="left">
-              <Image src={Sort} width={500} height={400} duration={0} />
+              <span
+                onMouseEnter={() => setSortPlay(true)}
+                onMouseLeave={() => setSortPlay(false)}
+              >
+                <ReactPlayer url={SortinVid} playing={sortPlay} loop />
+              </span>
             </div>
             <div className="right">
               <div className="heading">
@@ -119,7 +132,12 @@ export const CarouselModal = () => {
         <Carousel.Item>
           <div className="container">
             <div className="left">
-              <Image src={Netflix} width={500} height={400} duration={0} />
+              <span
+                onMouseEnter={() => setNetflixPlay(true)}
+                onMouseLeave={() => setNetflixPlay(false)}
+              >
+                <ReactPlayer url={NetflixVid} playing={netflixPlay} loop />
+              </span>
             </div>
             <div className="right">
               <div className="heading">
@@ -166,7 +184,12 @@ export const CarouselModal = () => {
         <Carousel.Item>
           <div className="container">
             <div className="left">
-              <Image src={Wechat} width={500} height={400} duration={0} />
+              <span
+                onMouseEnter={() => setWeChatPlay(true)}
+                onMouseLeave={() => setWeChatPlay(false)}
+              >
+                <ReactPlayer url={WechatVid} playing={weChatPlay} loop />
+              </span>
             </div>
             <div className="right">
               <div className="heading">
