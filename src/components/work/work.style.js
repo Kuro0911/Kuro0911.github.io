@@ -7,7 +7,7 @@ const WorkWrapper = styled.div`
 `;
 export const Container = styled.div`
   margin-top: 2%;
-  width: 50%;
+  width: 70%;
   text-align: center;
 `;
 export const JpWrapper = styled.div`
