@@ -7,34 +7,48 @@ import { WebTech } from "../workCompoents/webtech";
 import WorkModalWrapper from "./workModal.style";
 
 export const WorkModal = () => {
+  const handleclick = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <WorkModalWrapper>
       <div className="wrap">
         <div className="left">
           <div className="button-wrapper">
-            <button className="button">
+            <button className="button" onClick={() => handleclick("intern")}>
               <span>Internships</span>
             </button>
-            <button className="button">
+            <button className="button" onClick={() => handleclick("prog")}>
               <span>Programming Lang</span>
             </button>
-            <button className="button">
+            <button className="button" onClick={() => handleclick("webtech")}>
               <span>Web Technologies</span>
             </button>
-            <button className="button">
+            <button className="button" onClick={() => handleclick("others")}>
               <span>Others</span>
             </button>
-            <button className="button">
+            <button className="button" onClick={() => handleclick("course")}>
               <span>Courses</span>
             </button>
           </div>
         </div>
         <div className="right">
-          <Internship />
-          <Prog />
-          <WebTech />
-          <Others />
-          <Courses />
+          <span id="intern">
+            <Internship />
+          </span>
+          <span id="prog">
+            <Prog />
+          </span>
+          <span id="webtech">
+            <WebTech />
+          </span>
+          <span id="others">
+            <Others />
+          </span>
+          <span id="course">
+            <Courses />
+          </span>
         </div>
       </div>
     </WorkModalWrapper>

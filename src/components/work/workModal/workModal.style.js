@@ -53,7 +53,12 @@ const WorkModalWrapper = styled.div`
     height: 60vh;
     background-color: pink;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 export default WorkModalWrapper;
