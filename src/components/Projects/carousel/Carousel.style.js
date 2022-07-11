@@ -15,11 +15,11 @@ const Wrapper = styled.div`
     display: flex;
   }
   .left {
-    width: 50%;
+    width: 60%;
     margin-left: 10%;
   }
   .right {
-    width: 50%;
+    width: 40%;
     margin-right: 5%;
   }
   .heading {

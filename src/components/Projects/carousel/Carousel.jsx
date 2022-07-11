@@ -34,7 +34,12 @@ export const CarouselModal = () => {
                 onMouseEnter={() => setShibaPlay(true)}
                 onMouseLeave={() => setShibaPlay(false)}
               >
-                <ReactPlayer url={ShibaVid} playing={shibaPlay} loop />
+                <ReactPlayer
+                  url={ShibaVid}
+                  playing={shibaPlay}
+                  loop
+                  style={{ overflow: "hidden" }}
+                />
               </span>
             </div>
             <div className="right">
@@ -86,7 +91,12 @@ export const CarouselModal = () => {
                 onMouseEnter={() => setSortPlay(true)}
                 onMouseLeave={() => setSortPlay(false)}
               >
-                <ReactPlayer url={SortinVid} playing={sortPlay} loop />
+                <ReactPlayer
+                  url={SortinVid}
+                  playing={sortPlay}
+                  loop
+                  style={{ overflow: "hidden" }}
+                />
               </span>
             </div>
             <div className="right">
@@ -136,7 +146,12 @@ export const CarouselModal = () => {
                 onMouseEnter={() => setNetflixPlay(true)}
                 onMouseLeave={() => setNetflixPlay(false)}
               >
-                <ReactPlayer url={NetflixVid} playing={netflixPlay} loop />
+                <ReactPlayer
+                  url={NetflixVid}
+                  playing={netflixPlay}
+                  loop
+                  style={{ overflow: "hidden" }}
+                />
               </span>
             </div>
             <div className="right">
@@ -188,7 +203,12 @@ export const CarouselModal = () => {
                 onMouseEnter={() => setWeChatPlay(true)}
                 onMouseLeave={() => setWeChatPlay(false)}
               >
-                <ReactPlayer url={WechatVid} playing={weChatPlay} loop />
+                <ReactPlayer
+                  url={WechatVid}
+                  playing={weChatPlay}
+                  loop
+                  style={{ overflow: "hidden" }}
+                />
               </span>
             </div>
             <div className="right">
