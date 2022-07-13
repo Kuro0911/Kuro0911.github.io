@@ -10,10 +10,36 @@ const InternWrapper = styled.div`
     margin-left: 1em;
     margin-bottom: 1em;
   }
+  .btn {
+    margin-left: 2em;
+    .menuTextbtn {
+      font-size: 15px;
+      text-decoration: none;
+      font-family: monospace;
+      color: #64ffda;
+    }
+  }
   .para-wrap {
     text-align: left;
+    .list {
+      li {
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 1%;
+        span {
+          color: #64ffda;
+          font-size: 10px;
+        }
+      }
+    }
     h3 {
       margin-left: 1em;
+      .date {
+        font-size: small;
+        color: #64ffda;
+        margin-top: 0.5%;
+      }
       a {
         text-decoration: none;
         color: #64ffda;
@@ -37,6 +63,7 @@ const InternWrapper = styled.div`
       }
       a:hover {
         background-size: 0 3px, 100% 3px;
+        color: #b3bedd;
       }
     }
   }
@@ -50,6 +77,9 @@ export const ProgrammingWrap = styled.div`
   scroll-snap-align: start;
   h1 {
     margin-left: 1em;
+    .code-seg {
+      color: #64ffda;
+    }
   }
   .logo-container {
     margin-left: 1em;

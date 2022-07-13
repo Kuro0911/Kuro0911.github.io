@@ -19,7 +19,7 @@ export const WorkModal = () => {
               <span>Internships</span>
             </button>
             <button className="button" onClick={() => handleclick("prog")}>
-              <span>Programming Languages</span>
+              <span>Languages</span>
             </button>
             <button className="button" onClick={() => handleclick("course")}>
               <span>Courses</span>

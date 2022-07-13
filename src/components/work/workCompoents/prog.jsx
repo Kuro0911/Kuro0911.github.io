@@ -9,7 +9,9 @@ import python from "./logos/p_logo.svg";
 export const Prog = () => {
   return (
     <ProgrammingWrap>
-      <h1>Programming Languages</h1>
+      <h1>
+        Languages <code className="code-seg">&&</code> Technologies
+      </h1>
       <div className="logo-container">
         <Image src={cpp} width={75} height={75} />
         <Image src={c} width={75} height={75} />
