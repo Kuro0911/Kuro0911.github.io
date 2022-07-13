@@ -3,7 +3,6 @@ import { Courses } from "../workCompoents/courses";
 import { Internship } from "../workCompoents/internship";
 import { Others } from "../workCompoents/others";
 import { Prog } from "../workCompoents/prog";
-import { WebTech } from "../workCompoents/webtech";
 import WorkModalWrapper from "./workModal.style";
 
 export const WorkModal = () => {
@@ -20,16 +19,13 @@ export const WorkModal = () => {
               <span>Internships</span>
             </button>
             <button className="button" onClick={() => handleclick("prog")}>
-              <span>Programming Lang</span>
-            </button>
-            <button className="button" onClick={() => handleclick("webtech")}>
-              <span>Web Technologies</span>
-            </button>
-            <button className="button" onClick={() => handleclick("others")}>
-              <span>Others</span>
+              <span>Programming Languages</span>
             </button>
             <button className="button" onClick={() => handleclick("course")}>
               <span>Courses</span>
+            </button>
+            <button className="button" onClick={() => handleclick("others")}>
+              <span>Others</span>
             </button>
           </div>
         </div>
@@ -40,14 +36,11 @@ export const WorkModal = () => {
           <span id="prog">
             <Prog />
           </span>
-          <span id="webtech">
-            <WebTech />
+          <span id="course">
+            <Courses />
           </span>
           <span id="others">
             <Others />
-          </span>
-          <span id="course">
-            <Courses />
           </span>
         </div>
       </div>

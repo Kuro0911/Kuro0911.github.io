@@ -9,6 +9,8 @@ const WorkModalWrapper = styled.div`
     display: flex;
   }
   .left {
+    border-right-style: solid;
+    border-color: #64ffda;
     background-color: #09192f;
     width: 25%;
     height: 60vh;
