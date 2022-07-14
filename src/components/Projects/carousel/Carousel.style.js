@@ -4,6 +4,9 @@ const Wrapper = styled.div`
   .wrap {
     width: 95vw;
     height: 60vh;
+    .carousel-indicators [data-bs-target] {
+      background-color: #64ffda;
+    }
     .carousel-inner {
       min-height: 60vh;
       .carousel-item {
