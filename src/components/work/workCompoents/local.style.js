@@ -85,7 +85,19 @@ export const ProgrammingWrap = styled.div`
     margin-left: 1em;
     margin-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    .logo-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10%;
+    }
+    .logo-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
   }
 `;
 export const WebWrap = styled.div`
