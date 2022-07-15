@@ -9,6 +9,7 @@ import ShibaVid from "./videos/ShibaVid.mp4";
 import SortinVid from "./videos/SortinVid.mp4";
 import WechatVid from "./videos/WechatVid.mp4";
 import NetflixVid from "./videos/NetflixVid.mp4";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 export const CarouselModal = () => {
   const [index, setIndex] = useState(0);
@@ -51,12 +52,23 @@ export const CarouselModal = () => {
               <br />
               <div className="about">
                 <p>
-                  Do we make money or does money make us? Chezwich. I have never
-                  known a Jack that was in good enough shape to name
-                  bodybuilding after him. Do we make money or does money make
-                  us? Chezwich. This is a true fact: I never had a fear of
-                  heights until I fell off a roof. This is a true fact: I never
-                  had a fear of heights until I fell off a roof.{" "}
+                  Shiba is a <code>CHATBOT</code> made to help new users to get
+                  into crypto-currency by
+                  <br />
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Providing them various trading platforms to choose from{" "}
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Implementing basic trading strategies to help the users{" "}
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Providing the real time price of various coins using API
+                  <br />
                 </p>
               </div>
               <br />
@@ -106,15 +118,39 @@ export const CarouselModal = () => {
               <br />
               <div className="about">
                 <p>
-                  Do we make money or does money make us? Chezwich. I have never
-                  known a Jack that was in good enough shape to name
-                  bodybuilding after him. Do we make money or does money make
-                  us? Chezwich. This is a true fact: I never had a fear of
-                  heights until I fell off a roof. This is a true fact: I never
-                  had a fear of heights until I fell off a roof.{" "}
+                  SortViz has 6 algorithms implemented for sorting namely <br />
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Heap Sort
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Selection Sort
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Bubble Sort
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Quick Sort
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Insert Sort
+                  <br />
+                  <span>
+                    <ArrowRightIcon />
+                  </span>
+                  Merge Sort
                 </p>
               </div>
-              <br />
               <div className="tags">
                 <span>CryptoCurrency</span>
                 <span>JavaSript</span>

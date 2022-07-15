@@ -54,11 +54,22 @@ const Wrapper = styled.div`
     color: #64ffda;
   }
   .about {
+    span {
+      color: #64ffda;
+      font-size: 10px;
+      .css-i4bv87-MuiSvgIcon-root {
+        margin-top: -1.6%;
+      }
+    }
     text-align: left;
     p {
       font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
         -apple-system, system-ui, sans-serif;
       font-size: medium;
+      code {
+        color: #64ffda;
+        font-size: 16px;
+      }
     }
     color: #8892b0;
   }
