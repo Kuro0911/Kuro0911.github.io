@@ -20,6 +20,19 @@ export const CarouselModal = () => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
+  const sortAlgoNames = [
+    "Heap Sort",
+    "Bubble Sort",
+    "Insertion Sort",
+    "Merge Sort",
+    "Quick Sort",
+    "Selection Sort",
+  ];
+  sortAlgoNames.map((val) => {
+    console.log(val);
+  });
+
   return (
     <Wrapper>
       <Carousel
@@ -120,35 +133,16 @@ export const CarouselModal = () => {
                 <p>
                   SortViz has 6 algorithms implemented for sorting namely <br />
                   <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Heap Sort
-                  <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Selection Sort
-                  <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Bubble Sort
-                  <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Quick Sort
-                  <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Insert Sort
-                  <br />
-                  <span>
-                    <ArrowRightIcon />
-                  </span>
-                  Merge Sort
+                  {sortAlgoNames.map((val) => {
+                    return (
+                      <div style={{ dispay: "flex", fontFamily: "inherit" }}>
+                        <span>
+                          <ArrowRightIcon />
+                        </span>
+                        {val}
+                      </div>
+                    );
+                  })}
                 </p>
               </div>
               <div className="tags">
