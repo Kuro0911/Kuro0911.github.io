@@ -146,10 +146,9 @@ export const CarouselModal = () => {
                 </p>
               </div>
               <div className="tags">
-                <span>CryptoCurrency</span>
+                <span>Sorting Algorithms</span>
                 <span>JavaSript</span>
-                <span>ReactJS</span>
-                <span>ChatBot</span>
+                <span>NextJS</span>
               </div>
               <br />
               <div className="gotoContainer">
