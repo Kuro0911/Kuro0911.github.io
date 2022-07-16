@@ -189,20 +189,16 @@ export const CarouselModal = () => {
               <br />
               <div className="about">
                 <p>
-                  Do we make money or does money make us? Chezwich. I have never
-                  known a Jack that was in good enough shape to name
-                  bodybuilding after him. Do we make money or does money make
-                  us? Chezwich. This is a true fact: I never had a fear of
-                  heights until I fell off a roof. This is a true fact: I never
-                  had a fear of heights until I fell off a roof.{" "}
+                  A Netflix web clone which plays trailers for trending movies
+                  and shows
                 </p>
               </div>
               <br />
               <div className="tags">
-                <span>CryptoCurrency</span>
-                <span>JavaSript</span>
                 <span>ReactJS</span>
-                <span>ChatBot</span>
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>react-youtube</span>
               </div>
               <br />
               <div className="gotoContainer">
@@ -244,20 +240,19 @@ export const CarouselModal = () => {
               <br />
               <div className="about">
                 <p>
-                  Do we make money or does money make us? Chezwich. I have never
-                  known a Jack that was in good enough shape to name
-                  bodybuilding after him. Do we make money or does money make
-                  us? Chezwich. This is a true fact: I never had a fear of
-                  heights until I fell off a roof. This is a true fact: I never
-                  had a fear of heights until I fell off a roof.{" "}
+                  Wechat is one of the projects which I am the most proud of I
+                  learned a lot from this starting from adding databases using
+                  <code> firebase</code> adding google auth using firebase using{" "}
+                  <code>react reducers</code>, <code>react routers</code> it was
+                  a great project and I enjoyed the most while building it
                 </p>
               </div>
               <br />
               <div className="tags">
-                <span>CryptoCurrency</span>
-                <span>JavaSript</span>
-                <span>ReactJS</span>
-                <span>ChatBot</span>
+                <span>ReactJs</span>
+                <span>Firebase</span>
+                <span>NodeJs</span>
+                <span>MongoDb</span>
               </div>
               <br />
               <div className="gotoContainer">
