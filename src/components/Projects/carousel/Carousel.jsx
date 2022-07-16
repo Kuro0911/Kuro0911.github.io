@@ -29,9 +29,6 @@ export const CarouselModal = () => {
     "Quick Sort",
     "Selection Sort",
   ];
-  sortAlgoNames.map((val) => {
-    console.log(val);
-  });
 
   return (
     <Wrapper>
