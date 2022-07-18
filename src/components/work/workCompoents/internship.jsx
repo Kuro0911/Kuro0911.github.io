@@ -14,7 +14,7 @@ export const Internship = () => {
   };
   return (
     <InternWrapper>
-      <h1>Internships</h1>
+      <h1>Where I've Worked</h1>
       <div className="para-wrap">
         <h3>
           Frontend-Developer Intern @{" "}

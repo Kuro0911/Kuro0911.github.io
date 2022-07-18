@@ -56,7 +56,9 @@ export const About = () => {
           </TextContainer>
           <ImageContainer>
             <div className="hover-effect" style={{ "--clr": "#64ffda" }}>
-              <Image src={profile} width={250} height={250} />
+              <a href="https://www.instagram.com/dhano_senpai_/">
+                <Image src={profile} width={250} height={250} duration={0} />
+              </a>
             </div>
             <TagContainer tag={tag}>
               <h3>{name}</h3>

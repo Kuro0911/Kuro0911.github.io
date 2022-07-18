@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Courses } from "../workCompoents/courses";
 import { Internship } from "../workCompoents/internship";
 import { Others } from "../workCompoents/others";
@@ -6,25 +6,41 @@ import { Prog } from "../workCompoents/prog";
 import WorkModalWrapper from "./workModal.style";
 
 export const WorkModal = () => {
+  const [active, setActive] = useState("intern");
   const handleclick = (id) => {
+    setActive(id);
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <WorkModalWrapper>
+    <WorkModalWrapper active={active}>
       <div className="wrap">
         <div className="left">
           <div className="button-wrapper">
-            <button className="button" onClick={() => handleclick("intern")}>
+            <button
+              className={"button " + (active === "intern" ? "act" : "")}
+              onClick={() => {
+                handleclick("intern");
+              }}
+            >
               <span>Internships</span>
             </button>
-            <button className="button" onClick={() => handleclick("prog")}>
+            <button
+              className={"button " + (active === "prog" ? "act" : "")}
+              onClick={() => handleclick("prog")}
+            >
               <span>Languages</span>
             </button>
-            <button className="button" onClick={() => handleclick("course")}>
+            <button
+              className={"button " + (active === "course" ? "act" : "")}
+              onClick={() => handleclick("course")}
+            >
               <span>Courses</span>
             </button>
-            <button className="button" onClick={() => handleclick("others")}>
+            <button
+              className={"button " + (active === "others" ? "act" : "")}
+              onClick={() => handleclick("others")}
+            >
               <span>Others</span>
             </button>
           </div>

@@ -38,15 +38,21 @@ const WorkModalWrapper = styled.div`
           transition: background-size 400ms;
           cursor: pointer;
         }
-        span:hover {
-          background-size: 0 3px, 100% 3px;
-        }
+        // span:hover {
+        //   background-size: 0 3px, 100% 3px;
+        // }
         text-align: left;
         margin-top: 10%;
         background-color: transparent;
         border: none;
         color: #64ffda;
         font-size: 1.7vw;
+      }
+      .act {
+        span {
+          // color: #ccd6f6;
+          background-size: 0 3px, 100% 3px;
+        }
       }
     }
   }
@@ -56,7 +62,7 @@ const WorkModalWrapper = styled.div`
     background-color: pink;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
