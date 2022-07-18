@@ -23,6 +23,10 @@ export const ImageContainer = styled.div`
     }
   }
 `;
+export const TagContainer = styled.div`
+  text-align: right;
+  color: #ccd6f6;
+`;
 export const TextContainer = styled.div`
   width: 65%;
   color: #ccd6f6;

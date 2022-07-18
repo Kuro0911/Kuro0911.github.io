@@ -3,6 +3,7 @@ import AboutWrapper, {
   Container,
   ImageContainer,
   JpWrapper,
+  TagContainer,
   TextContainer,
   TextWrapper,
 } from "./about.style";
@@ -60,6 +61,10 @@ export const About = () => {
           </TextContainer>
           <ImageContainer>
             <Image src={profile} width={300} height={300} />
+            <TagContainer>
+              <h3>Dhananjai Sharma</h3>
+              <h4>kuro.</h4>
+            </TagContainer>
           </ImageContainer>
         </TextWrapper>
       </Container>
