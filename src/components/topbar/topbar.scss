@@ -8,8 +8,8 @@
     z-index: 3;
     transition: all 1s ease;
     overflow: hidden;
-
     .wrapper{
+        animation: fadeInDown 1.5s;
         padding: 10px 30px;
         display: flex;
         align-items: center;

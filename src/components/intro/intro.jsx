@@ -5,6 +5,7 @@ import IntroWrapper, {
   GreetContainer,
   NameContainer,
 } from "./intro.style";
+import "animate.css";
 
 export const Intro = () => {
   const [firstName, setFirstName] = useState("Dhananjai");

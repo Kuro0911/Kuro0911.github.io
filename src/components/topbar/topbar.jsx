@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./topbar.scss";
 import Button from "@mui/material/Button";
 import mypdf from "./utils/Dhananjai-sharma-resume.pdf";
+import "animate.css";
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const styles = {
     "&.MuiButton-outlined": {

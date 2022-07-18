@@ -11,6 +11,7 @@ export const Container = styled.div`
   text-align: center;
 `;
 export const GreetContainer = styled.div`
+  animation: fadeInDown 1.5s;
   text {
     font-size: 1.4vw;
     font-family: monospace;
@@ -21,6 +22,8 @@ export const GreetContainer = styled.div`
   }
 `;
 export const NameContainer = styled.div`
+  animation: fadeInUp 1.5s;
+
   margin-bottom: ${(props) => (props.text === "ダナンジャイ" ? "-0.93%" : "0")};
   text {
     color: ${(props) =>
@@ -38,6 +41,7 @@ export const NameContainer = styled.div`
 `;
 
 export const DesContainer = styled.div`
+  animation: fadeInUp 1.5s;
   text {
     color: #8892b0;
     font-size: 2vw;
