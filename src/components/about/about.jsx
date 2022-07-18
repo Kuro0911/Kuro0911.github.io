@@ -12,6 +12,10 @@ import Image from "mui-image";
 
 export const About = () => {
   const [text, setText] = useState("About");
+  const name = "Dhananjai Sharma";
+  // const [name, setName] = useState("Dhananjai Sharma");
+  const [tag, setTag] = useState("kuro.");
+
   const handleChange = () => {
     text === "アバウト" ? setText("About") : setText("アバウト");
   };
@@ -60,10 +64,16 @@ export const About = () => {
             </p>
           </TextContainer>
           <ImageContainer>
-            <Image src={profile} width={300} height={300} />
-            <TagContainer>
-              <h3>Dhananjai Sharma</h3>
-              <h4>kuro.</h4>
+            <Image src={profile} width={270} height={270} />
+            <TagContainer tag={tag}>
+              <h3>{name}</h3>
+              <h4 onMouseEnter={() => setTag(tag === "黒." ? "kuro." : "黒.")}>
+                {tag}
+              </h4>
+              <p>
+                Competitive Coder || C++ || Javascript || React.js || Next.js ||
+                Web Developer || Kali Linux || SRM University
+              </p>
             </TagContainer>
           </ImageContainer>
         </TextWrapper>
