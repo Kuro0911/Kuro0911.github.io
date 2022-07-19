@@ -21,6 +21,8 @@ export const JpWrapper = styled.div`
     color: #64ffda;
     font-size: 1.7vw;
   }
+  margin-bottom: 5%;
+
   @media screen and (max-width: 900px) {
     text {
       font-size: 4vw;

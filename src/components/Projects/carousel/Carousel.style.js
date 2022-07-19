@@ -13,18 +13,47 @@ const Wrapper = styled.div`
         min-height: 60vh;
       }
     }
+    @media screen and (max-width: 1200px) {
+      margin-top: 3%;
+      height: 70vh;
+    }
+    @media screen and (max-width: 900px) {
+      margin-top: 3%;
+      height: 70vh;
+    }
+    @media screen and (max-width: 470px) {
+    }
   }
   .container {
     display: flex;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   .left {
     width: 60%;
     margin-left: 10%;
     cursor: pointer;
+    @media screen and (max-width: 1200px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
   }
   .right {
     width: 40%;
     margin-right: 5%;
+    @media screen and (max-width: 1200px) {
+      width: 30%;
+      margin-left: 2%;
+    }
+    @media screen and (max-width: 900px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 470px) {
+    }
   }
   .heading {
     a {

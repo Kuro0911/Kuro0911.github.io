@@ -96,6 +96,8 @@ export const CarouselModal = () => {
                       url={ShibaVid}
                       playing={shibaPlay}
                       loop
+                      height={"90%"}
+                      width={"100%"}
                       style={{ overflow: "hidden" }}
                     />
                   </span>
@@ -182,6 +184,8 @@ export const CarouselModal = () => {
                       playing={sortPlay}
                       loop
                       style={{ overflow: "hidden" }}
+                      height={"90%"}
+                      width={"100%"}
                     />
                   </span>
                 </div>
@@ -262,6 +266,8 @@ export const CarouselModal = () => {
                       playing={netflixPlay}
                       loop
                       style={{ overflow: "hidden" }}
+                      height={"90%"}
+                      width={"100%"}
                     />
                   </span>
                 </div>
@@ -331,6 +337,8 @@ export const CarouselModal = () => {
                       playing={weChatPlay}
                       loop
                       style={{ overflow: "hidden" }}
+                      height={"90%"}
+                      width={"100%"}
                     />
                   </span>
                 </div>
