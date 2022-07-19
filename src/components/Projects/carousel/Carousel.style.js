@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   .left {
     width: 60%;
     margin-left: 10%;
+    cursor: pointer;
   }
   .right {
     width: 40%;

@@ -24,6 +24,7 @@ export const GreetContainer = styled.div`
 export const NameContainer = styled.div`
   animation: fadeIn 2s;
   text {
+    cursor: pointer;
     color: ${(props) =>
       props.text === "ダナンジャイ" ? "#64ffda" : "#ccd6f6"};
     font-size: ${(props) => (props.text === "ダナンジャイ" ? "6vw" : "7vw")};

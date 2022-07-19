@@ -17,9 +17,13 @@ export const Work = () => {
     <WorkWrapper id="work">
       <Container>
         <JpWrapper text={text1}>
-          <text onPointerEnter={handleChange1}>{text1}</text>
-          <text> / </text>
-          <text onPointerEnter={handleChange2}>{text2}</text>
+          <div className="exp">
+            <text onPointerEnter={handleChange1}>{text1}</text>
+          </div>
+          <code> && </code>
+          <div className="skill">
+            <text onPointerEnter={handleChange2}>{text2}</text>
+          </div>
         </JpWrapper>
         <WorkModal />
       </Container>

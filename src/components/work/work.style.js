@@ -11,9 +11,20 @@ export const Container = styled.div`
   text-align: center;
 `;
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "-1.50%" : "0")};
+  display: flex;
+  justify-content: center;
+  .exp {
+    width: 250px;
+  }
+  .skill {
+    width: 200px;
+  }
   text {
     font-family: monospace;
+    color: #64ffda;
+    font-size: 1.7vw;
+  }
+  code {
     color: #64ffda;
     font-size: 1.7vw;
   }
