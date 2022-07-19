@@ -3,7 +3,6 @@ import "./topbar.scss";
 import Button from "@mui/material/Button";
 import mypdf from "./utils/Dhananjai-sharma-resume.pdf";
 import "animate.css";
-
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
