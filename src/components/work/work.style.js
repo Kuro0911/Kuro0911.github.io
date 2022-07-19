@@ -28,5 +28,15 @@ export const JpWrapper = styled.div`
     color: #64ffda;
     font-size: 1.7vw;
   }
+  @media screen and (max-width: 900px) {
+    text {
+      font-size: 4vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: 4vw;
+    }
+  }
 `;
 export default WorkWrapper;

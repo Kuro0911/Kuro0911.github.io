@@ -9,11 +9,17 @@ export const Container = styled.div`
   margin-top: 3%;
   width: 60%;
   text-align: center;
+  @media screen and (max-width: 900px) {
+    width: 85%;
+  }
 `;
 export const TextWrapper = styled.div`
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `;
 export const ImageContainer = styled.div`
   width: fit-content;
@@ -33,6 +39,11 @@ export const ImageContainer = styled.div`
   .hover-effect:hover {
     box-shadow: 0 0 16px var(--clr);
   }
+  @media screen and (max-width: 900px) {
+    .hover-effect {
+      margin-left: 0%;
+    }
+  }
 `;
 export const TagContainer = styled.div`
   text-align: right;
@@ -49,6 +60,19 @@ export const TagContainer = styled.div`
     color: #8892b0;
     width: 81%;
   }
+  @media screen and (max-width: 900px) {
+    text-align: left;
+    align-items: start;
+    h3 {
+      font-size: xx-large;
+    }
+    h4 {
+      font-size: x-large;
+    }
+    p {
+      font-size: large;
+    }
+  }
 `;
 export const TextContainer = styled.div`
   width: 130%;
@@ -61,14 +85,30 @@ export const TextContainer = styled.div`
   border-right: solid;
   padding: 10px;
   border-color: #64ffda;
+  @media screen and (max-width: 900px) {
+    border-top: solid;
+    border-color: #64ffda;
+    width: 100%;
+    border-right: none;
+    font-size: x-large;
+  }
 `;
 
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "-1.50%" : "0")};
   text {
     font-family: monospace;
     color: #64ffda;
     font-size: 1.7vw;
+  }
+  @media screen and (max-width: 900px) {
+    text {
+      font-size: 4vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: 4vw;
+    }
   }
 `;
 export default AboutWrapper;

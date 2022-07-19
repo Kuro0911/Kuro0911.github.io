@@ -16,11 +16,20 @@ export const Container = styled.div`
   height: fit-content;
 `;
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "1%" : "3%")};
   text {
     font-family: monospace;
     color: #64ffda;
     font-size: 1.7vw;
+  }
+  @media screen and (max-width: 900px) {
+    text {
+      font-size: 4vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: 4vw;
+    }
   }
 `;
 

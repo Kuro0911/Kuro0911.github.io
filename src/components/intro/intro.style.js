@@ -9,6 +9,13 @@ export const Container = styled.div`
   margin-top: 10%;
   width: 100%;
   text-align: center;
+  @media screen and (max-width: 900px) {
+    text-align: left;
+    margin-top: 15%;
+  }
+  @media screen and (max-width: 470px) {
+    margin-top: 25%;
+  }
 `;
 export const GreetContainer = styled.div`
   animation: fadeInDown 1.5s;
@@ -19,6 +26,27 @@ export const GreetContainer = styled.div`
   }
   .jp {
     font-size: 1vw;
+  }
+  @media screen and (max-width: 900px) {
+    margin-left: 5%;
+    text {
+      font-size: 3vw;
+      font-family: monospace;
+      color: #64ffda;
+    }
+    .jp {
+      font-size: 2vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: 4vw;
+      font-family: monospace;
+      color: #64ffda;
+    }
+    .jp {
+      font-size: 3.5vw;
+    }
   }
 `;
 export const NameContainer = styled.div`
@@ -37,6 +65,24 @@ export const NameContainer = styled.div`
     color: #ccd6f6;
     margin-left: ${(props) => (props.text === "ダナンジャイ" ? "-2.45%" : "0")};
   }
+  @media screen and (max-width: 900px) {
+    margin-left: 5%;
+    text {
+      font-size: ${(props) => (props.text === "ダナンジャイ" ? "9vw" : "10vw")};
+    }
+    .lname {
+      font-size: 9vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: ${(props) =>
+        props.text === "ダナンジャイ" ? "11vw" : "12vw"};
+    }
+    .lname {
+      font-size: 11w;
+    }
+  }
 `;
 
 export const DesContainer = styled.div`
@@ -50,6 +96,22 @@ export const DesContainer = styled.div`
   .jp {
     font-size: 1.6vw;
   }
-  margin-top: 2%;
+  @media screen and (max-width: 900px) {
+    margin-left: 5%;
+    text {
+      font-size: 4vw;
+    }
+    .jp {
+      font-size: 3.6vw;
+    }
+  }
+  @media screen and (max-width: 470px) {
+    text {
+      font-size: 5vw;
+    }
+    .jp {
+      font-size: 4.6vw;
+    }
+  }
 `;
 export default IntroWrapper;

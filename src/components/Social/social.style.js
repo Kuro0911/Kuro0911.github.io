@@ -28,4 +28,7 @@ export const SocialWrapper = styled.div`
     color: #64ffda;
     font-size: 28px;
   }
+  @media screen and (max-width: 900px) {
+    height: 30%;
+  }
 `;

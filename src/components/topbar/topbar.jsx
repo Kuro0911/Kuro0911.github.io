@@ -73,7 +73,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             PaperProps={{
               sx: {
                 backgroundColor: "#09192f",
-                width: 300,
+                width: "65%",
               },
             }}
           >
