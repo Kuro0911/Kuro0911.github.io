@@ -6,7 +6,7 @@ const ContactWrapper = styled.div`
   background-color: #09192f;
 `;
 export const Container = styled.div`
-  margin-top: 6%;
+  margin-top: 3%;
   width: 50%;
   text-align: center;
   @media screen and (max-width: 900px) {
