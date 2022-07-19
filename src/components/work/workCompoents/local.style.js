@@ -201,6 +201,7 @@ export const OtherWrap = styled.div`
   background-color: #09192f;
   color: #ccd6f6;
   height: 60vh;
+  overflow: hidden;
   scroll-snap-align: start;
   h1 {
     margin-left: 1em;
