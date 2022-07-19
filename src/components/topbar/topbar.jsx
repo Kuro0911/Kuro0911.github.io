@@ -3,7 +3,27 @@ import "./topbar.scss";
 import Button from "@mui/material/Button";
 import mypdf from "./utils/Dhananjai-sharma-resume.pdf";
 import "animate.css";
+
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import { ListWrap } from "./topbar.style";
+
 export default function Topbar({ menuOpen, setMenuOpen }) {
+  const [state, setState] = React.useState({
+    right: false,
+  });
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
   const styles = {
     "&.MuiButton-outlined": {
       borderColor: "#64ffda",
@@ -13,7 +33,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
   const handleChange = () => {
     text === "黒." ? setText("KURO.") : setText("黒.");
   };
-  const handleClick = () => {
+  const handleClickpdf = () => {
     window.open(mypdf);
   };
   return (
@@ -39,17 +59,59 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </a>
           <Button
             variant="outlined"
-            onClick={handleClick}
+            onClick={handleClickpdf}
             className="btn"
             sx={styles}
           >
             <text className="menuTextbtn">resume</text>
           </Button>
-          {/* <div className="borgir" onClick={()=>setMenuOpen(!menuOpen)}>
-                        <span className='Line1'></span>
-                        <span className='Line2'></span>
-                        <span className='Line3'></span>
-                    </div> */}
+          <SwipeableDrawer
+            anchor={"right"}
+            open={state["right"]}
+            onClose={toggleDrawer("right", false)}
+            onOpen={toggleDrawer("right", true)}
+            PaperProps={{
+              sx: {
+                backgroundColor: "#09192f",
+                width: 300,
+              },
+            }}
+          >
+            <ListWrap>
+              <List>
+                <ListItem>
+                  <a href="#about" className="menuText">
+                    <text className="kanji">一</text>&nbsp;&nbsp;About
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <a href="#work" className="menuText">
+                    <text className="kanji">二</text>&nbsp;&nbsp;Experience
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <a href="#projects" className="menuText">
+                    <text className="kanji">三</text>&nbsp;&nbsp;Projects
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <a href="#contact" className="menuText">
+                    <text className="kanji">四</text>&nbsp;&nbsp;Contact
+                  </a>
+                </ListItem>
+                <ListItem>
+                  <Button
+                    variant="outlined"
+                    onClick={handleClickpdf}
+                    className="btn-menu"
+                    sx={styles}
+                  >
+                    <text className="menuTextbtn">resume</text>
+                  </Button>
+                </ListItem>
+              </List>
+            </ListWrap>
+          </SwipeableDrawer>
         </div>
       </div>
     </div>
