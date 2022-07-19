@@ -55,7 +55,13 @@
                         font-family: monospace;
                         color: #64ffda;
                     }
-            }  
+            } 
+            .poki{
+                @media screen and (min-width: 900px) {
+                    display: none;
+                }
+                color: #64ffda;
+            } 
            
         }
     }

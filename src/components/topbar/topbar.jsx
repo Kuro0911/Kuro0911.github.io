@@ -8,6 +8,9 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { ListWrap } from "./topbar.style";
+import { IconButton } from "@mui/material";
+import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
+import { Pokimon } from "./pokimon/pokimon";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const [state, setState] = React.useState({
@@ -65,6 +68,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           >
             <text className="menuTextbtn">resume</text>
           </Button>
+          <IconButton
+            className="poki"
+            size="large"
+            onClick={() => setState({ right: "true" })}
+          >
+            <CatchingPokemonIcon fontSize="large" />
+          </IconButton>
           <SwipeableDrawer
             anchor={"right"}
             open={state["right"]}
@@ -108,6 +118,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                   >
                     <text className="menuTextbtn">resume</text>
                   </Button>
+                </ListItem>
+                <ListItem>
+                  <Pokimon />
                 </ListItem>
               </List>
             </ListWrap>

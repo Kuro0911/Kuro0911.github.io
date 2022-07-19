@@ -39,9 +39,15 @@ export const JpWrapper = styled.div`
       font-size: 4vw;
     }
   }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 750px) {
     text {
       font-size: 4vw;
+    }
+    text {
+      width: 245px;
+    }
+    code {
+      width: 175px;
     }
   }
 `;
