@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SocialWrapper = styled.div`
+  animation: fadeInUp 2s;
   width: 7%;
   position: fixed;
   z-index: 3;

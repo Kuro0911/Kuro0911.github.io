@@ -3,6 +3,7 @@ import { SocialWrapper } from "./social.style";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
+import "animate.css";
 
 export const Social = () => {
   return (

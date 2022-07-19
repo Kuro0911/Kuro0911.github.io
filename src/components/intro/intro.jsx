@@ -23,11 +23,12 @@ export const Intro = () => {
           <text className="jp">こんにちはみんなさん私は</text>
         </GreetContainer>
         <NameContainer text={firstName}>
-          <text onPointerEnter={handleChangeF}>{firstName}</text>
+          <text onMouseEnter={handleChangeF} onMouseLeave={handleChangeF}>
+            {firstName}
+          </text>
           <text className="lname"> Sharma</text>
         </NameContainer>
         <DesContainer>
-          <br />
           <text>I build stuff for the web</text>
           <br />
           <text className="jp">私はウェブ用のものを作ります</text>

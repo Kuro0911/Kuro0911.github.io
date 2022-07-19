@@ -22,9 +22,7 @@ export const GreetContainer = styled.div`
   }
 `;
 export const NameContainer = styled.div`
-  animation: fadeInUp 1.5s;
-
-  margin-bottom: ${(props) => (props.text === "ダナンジャイ" ? "-0.93%" : "0")};
+  animation: fadeIn 2s;
   text {
     color: ${(props) =>
       props.text === "ダナンジャイ" ? "#64ffda" : "#ccd6f6"};
@@ -51,5 +49,6 @@ export const DesContainer = styled.div`
   .jp {
     font-size: 1.6vw;
   }
+  margin-top: 2%;
 `;
 export default IntroWrapper;

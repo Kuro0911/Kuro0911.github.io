@@ -11,7 +11,6 @@ export const Container = styled.div`
   text-align: center;
 `;
 export const JpWrapper = styled.div`
-  margin-bottom: ${(props) => (props.text === "コンタクト" ? "-1.50%" : "0")};
   text {
     font-family: monospace;
     color: #64ffda;
@@ -44,7 +43,7 @@ export const DesContainer = styled.div`
   }
 `;
 export const Footer = styled.div`
-  margin-top: 28%;
+  margin-top: 35%;
   text {
     font-size: 1vw;
     font-family: monospace;
