@@ -3,7 +3,7 @@ import { getData } from "./axios.js";
 import { data } from "./PokimonData.js";
 import Image from "mui-image";
 import CircularProgress from "@mui/material/CircularProgress";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const Pokimon = () => {
   const [imgSrc, setImgSrc] = useState("");

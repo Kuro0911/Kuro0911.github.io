@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const SocialWrapper = styled.div`
   animation: fadeInUp 2s;
