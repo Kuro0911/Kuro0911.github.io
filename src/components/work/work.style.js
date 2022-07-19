@@ -29,7 +29,13 @@ export const JpWrapper = styled.div`
     font-size: 1.7vw;
   }
   @media screen and (max-width: 900px) {
+    .exp {
+      width: 290px;
+    }
     text {
+      font-size: 4vw;
+    }
+    code {
       font-size: 4vw;
     }
   }
@@ -39,4 +45,5 @@ export const JpWrapper = styled.div`
     }
   }
 `;
+
 export default WorkWrapper;

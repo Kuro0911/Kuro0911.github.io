@@ -5,14 +5,42 @@ const WorkModalWrapper = styled.div`
   background-color: white;
   width: 70vw;
   height: 60vh;
+  overflow: hidden;
   .wrap {
     display: flex;
+  }
+  .wrap-mob {
+    scroll-snap-align: start;
+    display: none;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    @media screen and (max-width: 900px) {
+      margin-top: 15%;
+      display: flex;
+      color: white;
+      height: 60vh;
+    }
+    .container {
+      color: #64ffda;
+      h1 {
+        text-transform: capitalize;
+        font-family: monospace;
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    background-color: #09192f;
   }
   .left {
     border-right-style: solid;
     border-color: #64ffda;
     background-color: #09192f;
     width: 25%;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
     height: 60vh;
     .button-wrapper {
       display: flex;
@@ -59,12 +87,24 @@ const WorkModalWrapper = styled.div`
   .right {
     width: 75%;
     height: 60vh;
-    background-color: pink;
+    background-color: transparent;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     overflow-y: hidden;
     scrollbar-width: none;
     &::-webkit-scrollbar {
+      display: none;
+    }
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      overflow-y: hidden;
+    }
+  }
+  .homeBtn {
+    color: #64ffda;
+    margin-top: -15%;
+    display: ${(props) => (props.active === "home" ? "none" : "")};
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }

@@ -68,6 +68,35 @@ const InternWrapper = styled.div`
       }
     }
   }
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: xx-large;
+      margin-top: 15%;
+    }
+    .btn {
+      .menuTextbtn {
+        font-size: 21px;
+      }
+    }
+    .para-wrap {
+      .list {
+        li {
+          font-size: 21px;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+      h3 {
+        .date {
+          font-size: large;
+        }
+        a {
+          font-size: xx-large;
+        }
+      }
+    }
+  }
 `;
 
 export const ProgrammingWrap = styled.div`
@@ -140,6 +169,31 @@ export const CourseWrap = styled.div`
     font-size: small;
     color: #64ffda;
     margin-top: 0.5%;
+  }
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: xx-large;
+      margin-top: 15%;
+    }
+    .list {
+      text-align: left;
+      li {
+        font-size: x-large;
+        span {
+          font-size: x-large;
+        }
+        code {
+          color: #64ffda;
+          font-size: large;
+        }
+        a {
+          font-size: xx-large;
+        }
+      }
+    }
+    .date {
+      font-size: large;
+    }
   }
 `;
 export const OtherWrap = styled.div`

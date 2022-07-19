@@ -4,21 +4,48 @@ import { Internship } from "../workCompoents/internship";
 import { Others } from "../workCompoents/others";
 import { Prog } from "../workCompoents/prog";
 import WorkModalWrapper from "./workModal.style";
+import folder from "../workCompoents/logos/fold.png";
+import Image from "mui-image";
+import Grid from "@mui/material/Grid";
+import { IconButton } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
 
 export const WorkModal = () => {
-  const [active, setActive] = useState("intern");
+  const [active, setActive] = useState("home");
   const handleclick = (id) => {
     setActive(id);
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
   };
+
+  const mobData = [
+    { name: "Internships", id: "intern" },
+    { name: "Languages", id: "prog" },
+    { name: "Courses", id: "course" },
+    { name: "Others", id: "others" },
+  ];
+  const handleEvent = (width) => {
+    width < 900 ? handleclick("home") : handleclick("intern");
+  };
+  window.addEventListener("resize", function (event) {
+    handleEvent(document.body.clientWidth);
+    // console.log(
+    //   document.body.clientWidth +
+    //     " wide by " +
+    //     document.body.clientHeight +
+    //     " high"
+    // );
+  });
   return (
     <WorkModalWrapper active={active}>
       <div className="wrap">
         <div className="left">
           <div className="button-wrapper">
             <button
-              className={"button " + (active === "intern" ? "act" : "")}
+              className={
+                "button " +
+                (active === "intern" || active === "home" ? "act" : "")
+              }
               onClick={() => {
                 handleclick("intern");
               }}
@@ -46,6 +73,24 @@ export const WorkModal = () => {
           </div>
         </div>
         <div className="right">
+          <span id="home">
+            <div className="wrap-mob">
+              <Grid
+                container
+                rowSpacing={5}
+                columnSpacing={{ xs: 2, sm: 3, md: 4 }}
+              >
+                {mobData.map((val) => (
+                  <Grid item xs={6}>
+                    <div className="container">
+                      <Image src={folder} onClick={() => handleclick(val.id)} />
+                      <h1>{val.name}</h1>
+                    </div>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </span>
           <span id="intern">
             <Internship />
           </span>
@@ -60,6 +105,9 @@ export const WorkModal = () => {
           </span>
         </div>
       </div>
+      <IconButton onClick={() => handleclick("home")} className="homeBtn">
+        <HomeIcon fontSize="large" />
+      </IconButton>
     </WorkModalWrapper>
   );
 };
