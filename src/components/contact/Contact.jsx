@@ -69,12 +69,12 @@ export const Contact = () => {
             </p>
           </DesContainer>
         </>
-        <Footer>
-          <text>made by Dhananjai Sharma</text>
-          <br />
-          <text className="jp">さようなら</text>
-        </Footer>
       </Container>
+      <Footer>
+        <text>made by Dhananjai Sharma</text>
+        <br />
+        <text className="jp">さようなら</text>
+      </Footer>
     </ContactWrapper>
   );
 };

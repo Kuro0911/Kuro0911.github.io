@@ -14,6 +14,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  @media screen and (max-width: 900px) {
+    margin-top: 8%;
+  }
 `;
 export const JpWrapper = styled.div`
   text {

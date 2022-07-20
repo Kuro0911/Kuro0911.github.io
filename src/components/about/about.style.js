@@ -11,6 +11,7 @@ export const Container = styled.div`
   text-align: center;
   @media screen and (max-width: 900px) {
     width: 85%;
+    margin-top: 8%;
   }
 `;
 export const TextWrapper = styled.div`

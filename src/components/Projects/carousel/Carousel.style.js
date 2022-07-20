@@ -146,7 +146,7 @@ const Wrapper = styled.div`
       }
     }
     .tags {
-      margin-top: -15%;
+      margin-top: -10%;
       span {
         font-size: 8px;
       }

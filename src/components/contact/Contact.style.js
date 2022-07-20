@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 
 const ContactWrapper = styled.div`
   display: flex;
-  justify-content: center;
   background-color: #09192f;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;
 export const Container = styled.div`
   margin-top: 3%;
@@ -11,10 +13,10 @@ export const Container = styled.div`
   text-align: center;
   overflow: hidden;
   @media screen and (max-width: 900px) {
+    margin-top: 10%;
     width: 75%;
   }
   @media screen and (max-width: 470px) {
-    margin-top: 20%;
     width: 85%;
   }
 `;
@@ -77,7 +79,7 @@ export const DesContainer = styled.div`
   }
 `;
 export const Footer = styled.div`
-  margin-top: 35%;
+  text-align: center;
   text {
     font-size: 1vw;
     font-family: monospace;
@@ -88,7 +90,6 @@ export const Footer = styled.div`
     font-size: 1vw;
   }
   @media screen and (max-width: 900px) {
-    margin-top: 40%;
     text {
       font-size: 2vw;
     }
@@ -97,7 +98,6 @@ export const Footer = styled.div`
     }
   }
   @media screen and (max-width: 470px) {
-    margin-top: 50%;
     text {
       font-size: 3vw;
     }

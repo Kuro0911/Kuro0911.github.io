@@ -120,10 +120,12 @@ export const CarouselModal = () => {
                         <ArrowRightIcon />
                       </span>
                       Providing them various trading platforms to choose from{" "}
+                      <br />
                       <span>
                         <ArrowRightIcon />
                       </span>
                       Implementing basic trading strategies to help the users{" "}
+                      <br />
                       <span>
                         <ArrowRightIcon />
                       </span>

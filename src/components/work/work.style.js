@@ -9,6 +9,9 @@ export const Container = styled.div`
   margin-top: 2%;
   width: 70%;
   text-align: center;
+  @media screen and (max-width: 900px) {
+    margin-top: 8%;
+  }
 `;
 export const JpWrapper = styled.div`
   display: flex;
