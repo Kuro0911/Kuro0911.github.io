@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Courses } from "../workCompoents/courses";
 import { Internship } from "../workCompoents/internship";
 import { Others } from "../workCompoents/others";
@@ -24,18 +24,20 @@ export const WorkModal = () => {
     { name: "Courses", id: "course" },
     { name: "Others", id: "others" },
   ];
-  const handleEvent = (width) => {
-    width < 900 ? handleclick("home") : handleclick("intern");
-  };
-  window.addEventListener("resize", function (event) {
-    handleEvent(document.body.clientWidth);
-    // console.log(
-    //   document.body.clientWidth +
-    //     " wide by " +
-    //     document.body.clientHeight +
-    //     " high"
-    // );
-  });
+  useEffect(() => {
+    window.addEventListener("resize", function (event) {
+      document.body.clientWidth < 900
+        ? handleclick("home")
+        : handleclick("intern");
+      // console.log(
+      //   document.body.clientWidth +
+      //     " wide by " +
+      //     document.body.clientHeight +
+      //     " high"
+      // );
+    });
+  }, []);
+
   return (
     <WorkModalWrapper active={active}>
       <div className="wrap">

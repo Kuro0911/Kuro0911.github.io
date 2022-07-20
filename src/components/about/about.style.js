@@ -29,6 +29,14 @@ export const ImageContainer = styled.div`
       border-radius: 100%;
     }
   }
+  .mob-view {
+    @media screen and (max-width: 900px) {
+      display: flex;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  }
   .hover-effect {
     width: 250px;
     height: 250px;
@@ -36,13 +44,24 @@ export const ImageContainer = styled.div`
     transition: 0.5s;
     margin-left: 20%;
     margin-top: 5%;
+    @media screen and (max-width: 900px) {
+      max-width: 115px;
+      min-width: 115px;
+      max-height: 115px;
+      margin-top: 2%;
+      margin-right: 2%;
+      min-height: 115px;
+    }
   }
   .hover-effect:hover {
     box-shadow: 0 0 16px var(--clr);
+    @media screen and (max-width: 900px) {
+      box-shadow: 0 0 11px var(--clr);
+    }
   }
   @media screen and (max-width: 900px) {
     .hover-effect {
-      margin-left: 0%;
+      margin-left: 1%;
     }
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AboutWrapper, {
   Container,
   ImageContainer,
@@ -12,6 +12,7 @@ import Image from "mui-image";
 
 export const About = () => {
   const [text, setText] = useState("About");
+  const [imgHW, setImgHW] = useState({ height: 250, width: 250 });
   const name = "Dhananjai Sharma";
   // const [name, setName] = useState("Dhananjai Sharma");
   const [tag, setTag] = useState("kuro.");
@@ -19,6 +20,18 @@ export const About = () => {
   const handleChange = () => {
     text === "アバウト" ? setText("About") : setText("アバウト");
   };
+  useEffect(() => {
+    window.screen.availWidth < 900
+      ? setImgHW({ height: 115, width: 115 })
+      : setImgHW({ height: 250, width: 250 });
+    window.addEventListener("resize", function (event) {
+      console.log(document.body.clientWidth);
+      document.body.clientWidth < 900
+        ? setImgHW({ height: 115, width: 115 })
+        : setImgHW({ height: 250, width: 250 });
+    });
+  }, []);
+
   return (
     <AboutWrapper id="about">
       <Container>
@@ -55,21 +68,30 @@ export const About = () => {
             </p>
           </TextContainer>
           <ImageContainer>
-            <div className="hover-effect" style={{ "--clr": "#64ffda" }}>
-              <a href="https://www.instagram.com/dhano_senpai_/">
-                <Image src={profile} width={250} height={250} duration={0} />
-              </a>
+            <div className="mob-view">
+              <div className="hover-effect" style={{ "--clr": "#64ffda" }}>
+                <a href="https://www.instagram.com/dhano_senpai_/">
+                  <Image
+                    src={profile}
+                    width={imgHW.width}
+                    height={imgHW.height}
+                    duration={0}
+                  />
+                </a>
+              </div>
+              <TagContainer tag={tag}>
+                <h3>{name}</h3>
+                <h4
+                  onMouseEnter={() => setTag(tag === "黒." ? "kuro." : "黒.")}
+                >
+                  {tag}
+                </h4>
+                <p>
+                  Competitive Coder || C++ || Javascript || React.js || Next.js
+                  || Web Developer || Kali Linux || SRM University
+                </p>
+              </TagContainer>
             </div>
-            <TagContainer tag={tag}>
-              <h3>{name}</h3>
-              <h4 onMouseEnter={() => setTag(tag === "黒." ? "kuro." : "黒.")}>
-                {tag}
-              </h4>
-              <p>
-                Competitive Coder || C++ || Javascript || React.js || Next.js ||
-                Web Developer || Kali Linux || SRM University
-              </p>
-            </TagContainer>
           </ImageContainer>
         </TextWrapper>
       </Container>
