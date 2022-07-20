@@ -11,10 +11,14 @@ import { IconButton } from "@mui/material";
 import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import { Pokimon } from "./pokimon/pokimon";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Topbar({ menuOpen, setMenuOpen, onChange }) {
   const [state, setState] = React.useState({
     right: false,
   });
+  const handleClick = (id) => {
+    setState({ right: false });
+    onChange(id);
+  };
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&
@@ -89,22 +93,38 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <ListWrap>
               <List>
                 <ListItem>
-                  <a href="#about" className="menuText">
+                  <a
+                    href="#about"
+                    className="menuText"
+                    onClick={() => handleClick("about")}
+                  >
                     <text className="kanji">一</text>&nbsp;&nbsp;About
                   </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#work" className="menuText">
+                  <a
+                    href="#work"
+                    className="menuText"
+                    onClick={() => handleClick("work")}
+                  >
                     <text className="kanji">二</text>&nbsp;&nbsp;Experience
                   </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#projects" className="menuText">
+                  <a
+                    href="#projects"
+                    className="menuText"
+                    onClick={() => handleClick("projects")}
+                  >
                     <text className="kanji">三</text>&nbsp;&nbsp;Projects
                   </a>
                 </ListItem>
                 <ListItem>
-                  <a href="#contact" className="menuText">
+                  <a
+                    href="#contact"
+                    className="menuText"
+                    onClick={() => handleClick("contact")}
+                  >
                     <text className="kanji">四</text>&nbsp;&nbsp;Contact
                   </a>
                 </ListItem>

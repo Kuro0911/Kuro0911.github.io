@@ -12,9 +12,19 @@ import { About } from "./components/about/about";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  // const [active, setActive] = useState("intro");
+  const onChangeId = (id) => {
+    // setActive(id);
+    const element = document.getElementById("contact");
+    element.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="App">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Topbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        onChange={onChangeId}
+      />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Social />
       <div className="sections">
