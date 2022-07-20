@@ -105,7 +105,7 @@ const WorkModalWrapper = styled.div`
   }
   .homeBtn {
     color: #64ffda;
-    margin-top: -15%;
+    margin-top: -18%;
     display: ${(props) => (props.active === "home" ? "none" : "")};
     @media screen and (min-width: 900px) {
       display: none;

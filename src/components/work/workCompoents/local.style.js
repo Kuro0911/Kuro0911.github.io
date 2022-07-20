@@ -296,6 +296,7 @@ export const OtherWrap = styled.div`
   @media screen and (max-width: 900px) {
     h1 {
       font-size: small;
+      margin-top: 5%;
     }
     .btn {
       margin-left: 2em;
