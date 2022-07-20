@@ -10,8 +10,20 @@ import nextLogo from "./logos/next-js-logo.png";
 import htmlLogo from "./logos/htmlLogo.png";
 import cssLogo from "./logos/cssLogo.png";
 import nodeLogo from "./logos/nodejs-logo.svg";
+import Grid from "@mui/material/Grid";
 
 export const Prog = () => {
+  const SrcImg = [
+    cpp,
+    c,
+    js,
+    python,
+    htmlLogo,
+    cssLogo,
+    reactLogo,
+    nextLogo,
+    nodeLogo,
+  ];
   return (
     <ProgrammingWrap>
       <h1>
@@ -31,6 +43,21 @@ export const Prog = () => {
           <Image src={nextLogo} width={65} height={65} />
           <Image src={nodeLogo} width={105} height={60} />
         </div>
+      </div>
+      <div className="logo-container-mob">
+        <Grid
+          rowSpacing={5}
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          {SrcImg.map((val) => (
+            <Grid item xs={4}>
+              <Image src={val} width={80} height={75} />
+            </Grid>
+          ))}
+        </Grid>
       </div>
     </ProgrammingWrap>
   );

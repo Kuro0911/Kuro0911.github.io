@@ -111,11 +111,19 @@ export const ProgrammingWrap = styled.div`
     .code-seg {
       color: #64ffda;
     }
+    @media screen and (max-width: 900px) {
+      font-size: x-large;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
   }
   .logo-container {
     margin-left: 1em;
     margin-top: 5%;
     display: flex;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
     flex-direction: column;
     align-items: center;
     .logo-top {
@@ -128,6 +136,11 @@ export const ProgrammingWrap = styled.div`
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+    }
+  }
+  .logo-container-mob {
+    @media screen and (min-width: 900px) {
+      display: none;
     }
   }
 `;

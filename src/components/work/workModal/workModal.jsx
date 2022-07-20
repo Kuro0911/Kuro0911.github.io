@@ -8,7 +8,7 @@ import folder from "../workCompoents/logos/fold.png";
 import Image from "mui-image";
 import Grid from "@mui/material/Grid";
 import { IconButton } from "@mui/material";
-import HomeIcon from "@mui/icons-material/Home";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 export const WorkModal = () => {
   const [active, setActive] = useState("home");
@@ -108,7 +108,7 @@ export const WorkModal = () => {
         </div>
       </div>
       <IconButton onClick={() => handleclick("home")} className="homeBtn">
-        <HomeIcon fontSize="large" />
+        <ArrowBackIosIcon fontSize="large" />
       </IconButton>
     </WorkModalWrapper>
   );
