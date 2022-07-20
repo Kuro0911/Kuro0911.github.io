@@ -9,6 +9,7 @@ export const Container = styled.div`
   margin-top: 3%;
   width: 50%;
   text-align: center;
+  overflow: hidden;
   @media screen and (max-width: 900px) {
     width: 75%;
   }
