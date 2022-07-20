@@ -71,16 +71,15 @@ export const NameContainer = styled.div`
       font-size: ${(props) => (props.text === "ダナンジャイ" ? "9vw" : "10vw")};
     }
     .lname {
-      font-size: 9vw;
+      font-size: 10vw;
     }
   }
   @media screen and (max-width: 470px) {
     text {
-      font-size: ${(props) =>
-        props.text === "ダナンジャイ" ? "11vw" : "12vw"};
+      font-size: ${(props) => (props.text === "ダナンジャイ" ? "9vw" : "11vw")};
     }
     .lname {
-      font-size: 11w;
+      font-size: ${(props) => (props.text === "ダナンジャイ" ? "9vw" : "11vw")};
     }
   }
 `;
