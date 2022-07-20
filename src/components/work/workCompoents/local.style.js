@@ -70,29 +70,30 @@ const InternWrapper = styled.div`
   }
   @media screen and (max-width: 900px) {
     h1 {
-      font-size: xx-large;
+      font-size: x-large;
       margin-top: 15%;
     }
     .btn {
       .menuTextbtn {
-        font-size: 21px;
+        font-size: 11px;
       }
     }
     .para-wrap {
       .list {
         li {
-          font-size: 21px;
+          font-size: 11px;
           span {
-            font-size: 20px;
+            font-size: 11px;
           }
         }
       }
       h3 {
+        font-size: medium;
         .date {
-          font-size: large;
+          font-size: small;
         }
         a {
-          font-size: xx-large;
+          font-size: medium;
         }
       }
     }
@@ -172,27 +173,27 @@ export const CourseWrap = styled.div`
   }
   @media screen and (max-width: 900px) {
     h1 {
-      font-size: xx-large;
+      font-size: medium;
       margin-top: 15%;
     }
     .list {
       text-align: left;
       li {
-        font-size: x-large;
+        font-size: small;
         span {
-          font-size: x-large;
+          font-size: small;
         }
         code {
           color: #64ffda;
-          font-size: large;
+          font-size: x-small;
         }
         a {
-          font-size: xx-large;
+          font-size: small;
         }
       }
     }
     .date {
-      font-size: large;
+      font-size: small;
     }
   }
 `;
@@ -289,6 +290,42 @@ export const OtherWrap = styled.div`
       a:hover {
         background-size: 0 3px, 100% 3px;
         color: #b3bedd;
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: small;
+    }
+    .btn {
+      margin-left: 2em;
+      .menuTextbtn {
+        font-size: 10px;
+      }
+    }
+    .para-wrap {
+      code {
+      }
+      .list {
+        font-size: small;
+        li {
+          margin-left: -4%;
+          span {
+            font-size: 7px;
+          }
+          a {
+            font-size: small;
+          }
+        }
+      }
+      h3 {
+        font-size: small;
+        .date {
+          font-size: xx-small;
+        }
+        a {
+          font-size: small;
+        }
       }
     }
   }

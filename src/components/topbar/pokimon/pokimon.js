@@ -22,7 +22,8 @@ export const Pokimon = () => {
     height: 40vh;
     width: 100%;
     flex-direction: column;
-    h2 {
+    h6 {
+      font-size: 0.9rem;
       color: #ccd6f6;
       text-transform: uppercase;
       span {
@@ -44,10 +45,10 @@ export const Pokimon = () => {
 
   return imgSrc !== "" ? (
     <PokimonWrap>
-      <Image src={imgSrc} />
-      <h2>
+      <Image src={imgSrc} width={100} height={100} />
+      <h6>
         A Wild <span>{name}</span> Appeared!
-      </h2>
+      </h6>
     </PokimonWrap>
   ) : (
     <LoadWrap>

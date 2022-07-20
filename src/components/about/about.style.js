@@ -64,13 +64,13 @@ export const TagContainer = styled.div`
     text-align: left;
     align-items: start;
     h3 {
-      font-size: xx-large;
+      font-size: large;
     }
     h4 {
-      font-size: x-large;
+      font-size: medium;
     }
     p {
-      font-size: large;
+      font-size: small;
     }
   }
 `;
@@ -90,7 +90,7 @@ export const TextContainer = styled.div`
     border-color: #64ffda;
     width: 100%;
     border-right: none;
-    font-size: x-large;
+    font-size: small;
   }
 `;
 

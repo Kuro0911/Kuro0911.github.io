@@ -77,7 +77,7 @@ export const WorkModal = () => {
             <div className="wrap-mob">
               <Grid
                 container
-                rowSpacing={5}
+                rowSpacing={2}
                 columnSpacing={{ xs: 2, sm: 3, md: 4 }}
               >
                 {mobData.map((val) => (

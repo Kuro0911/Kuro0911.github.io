@@ -96,7 +96,7 @@ export const Footer = styled.div`
     }
   }
   @media screen and (max-width: 470px) {
-    margin-top: 60%;
+    margin-top: 50%;
     text {
       font-size: 3vw;
     }

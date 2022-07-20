@@ -127,6 +127,37 @@ const Wrapper = styled.div`
       color: #64ffda;
     }
   }
+  @media screen and (max-width: 900px) {
+    .heading {
+      margin-bottom: -7%;
+      a {
+        font-size: medium;
+      }
+    }
+    .about {
+      span {
+        font-size: 10px;
+      }
+      p {
+        font-size: x-small;
+        code {
+          font-size: 10px;
+        }
+      }
+    }
+    .tags {
+      margin-top: -15%;
+      span {
+        font-size: 8px;
+      }
+    }
+    .gotoContainer {
+      margin-top: -8%;
+      .icon {
+        font-size: 15px;
+      }
+    }
+  }
 `;
 
 export default Wrapper;

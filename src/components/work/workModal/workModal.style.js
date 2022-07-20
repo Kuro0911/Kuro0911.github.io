@@ -27,6 +27,9 @@ const WorkModalWrapper = styled.div`
       h1 {
         text-transform: capitalize;
         font-family: monospace;
+        @media screen and (max-width: 900px) {
+          font-size: 18px;
+        }
       }
     }
   }
