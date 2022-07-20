@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getData } from "./axios.js";
+import { getData } from "./utils";
 import { data } from "./PokimonData.js";
 import Image from "mui-image";
 import CircularProgress from "@mui/material/CircularProgress";

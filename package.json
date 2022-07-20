@@ -1,8 +1,9 @@
 {
+  "homepage": "https://kuro0911.github.io/my-site",
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "dependenciess": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
@@ -29,6 +30,8 @@
     "autoprefixer": "10.4.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
@@ -53,6 +56,22 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.1",
+    "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "i": "^0.3.7",
+    "mui-image": "^1.0.7",
+    "npm": "^8.14.0",
+    "react-bootstrap": "^2.4.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-player": "^2.10.1",
+    "react-scripts": "^5.0.1"
   }
 }
