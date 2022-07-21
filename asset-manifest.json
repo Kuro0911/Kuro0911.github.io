@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.72a1b8f7.css",
-    "main.js": "/my-site/static/js/main.5443c612.js",
-    "static/media/ShibaVid.mp4": "/my-site/static/media/ShibaVid.60d7e1f2ad099c5e45a7.mp4",
-    "static/media/NetflixVid.mp4": "/my-site/static/media/NetflixVid.f7f184209b7818403205.mp4",
-    "static/media/WechatVid.mp4": "/my-site/static/media/WechatVid.7e757fa91e7d3f5df971.mp4",
-    "static/media/SortinVid.mp4": "/my-site/static/media/SortinVid.6bc14548a2d6e8e0dbb0.mp4",
-    "static/media/Dhananjai-sharma-resume.pdf": "/my-site/static/media/Dhananjai-sharma-resume.049915165fba69580046.pdf",
-    "static/media/React-icon.png": "/my-site/static/media/React-icon.702a26a65699561606d2.png",
-    "static/media/InternCert.pdf": "/my-site/static/media/InternCert.e5ff740c2b296a562d69.pdf",
-    "static/media/profile.jpg": "/my-site/static/media/profile.7e5c2c8ba8b3911f83de.jpg",
-    "static/media/fold.png": "/my-site/static/media/fold.190ab4f767a953dcaa4c.png",
-    "static/media/nodejs-logo.svg": "/my-site/static/media/nodejs-logo.f917ac5c89daa244c1aa10cf47789692.svg",
-    "static/media/cpp_logo.svg": "/my-site/static/media/cpp_logo.0bd43dff6057d03b1061db19f79e6c4e.svg",
-    "static/media/c_logo.svg": "/my-site/static/media/c_logo.ac27de8477fe6c13739a9e3f385b75cc.svg",
-    "static/media/js_logo.svg": "/my-site/static/media/js_logo.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
-    "static/media/p_logo.svg": "/my-site/static/media/p_logo.14f5a10cd798d37370e148820ac33a75.svg",
-    "index.html": "/my-site/index.html",
-    "main.72a1b8f7.css.map": "/my-site/static/css/main.72a1b8f7.css.map",
-    "main.5443c612.js.map": "/my-site/static/js/main.5443c612.js.map"
+    "main.css": "/static/css/main.72a1b8f7.css",
+    "main.js": "/static/js/main.f5e7e9f7.js",
+    "static/media/ShibaVid.mp4": "/static/media/ShibaVid.60d7e1f2ad099c5e45a7.mp4",
+    "static/media/NetflixVid.mp4": "/static/media/NetflixVid.f7f184209b7818403205.mp4",
+    "static/media/WechatVid.mp4": "/static/media/WechatVid.7e757fa91e7d3f5df971.mp4",
+    "static/media/SortinVid.mp4": "/static/media/SortinVid.6bc14548a2d6e8e0dbb0.mp4",
+    "static/media/Dhananjai-sharma-resume.pdf": "/static/media/Dhananjai-sharma-resume.049915165fba69580046.pdf",
+    "static/media/React-icon.png": "/static/media/React-icon.702a26a65699561606d2.png",
+    "static/media/InternCert.pdf": "/static/media/InternCert.e5ff740c2b296a562d69.pdf",
+    "static/media/profile.jpg": "/static/media/profile.7e5c2c8ba8b3911f83de.jpg",
+    "static/media/fold.png": "/static/media/fold.190ab4f767a953dcaa4c.png",
+    "static/media/nodejs-logo.svg": "/static/media/nodejs-logo.f917ac5c89daa244c1aa10cf47789692.svg",
+    "static/media/cpp_logo.svg": "/static/media/cpp_logo.0bd43dff6057d03b1061db19f79e6c4e.svg",
+    "static/media/c_logo.svg": "/static/media/c_logo.ac27de8477fe6c13739a9e3f385b75cc.svg",
+    "static/media/js_logo.svg": "/static/media/js_logo.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
+    "static/media/p_logo.svg": "/static/media/p_logo.14f5a10cd798d37370e148820ac33a75.svg",
+    "index.html": "/index.html",
+    "main.72a1b8f7.css.map": "/static/css/main.72a1b8f7.css.map",
+    "main.f5e7e9f7.js.map": "/static/js/main.f5e7e9f7.js.map"
   },
   "entrypoints": [
     "static/css/main.72a1b8f7.css",
-    "static/js/main.5443c612.js"
+    "static/js/main.f5e7e9f7.js"
   ]
 }
