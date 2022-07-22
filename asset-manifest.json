@@ -1,11 +1,7 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.34113e2c.css",
-    "main.js": "/my-site/static/js/main.5443c612.js",
-    "static/media/ShibaVid.mp4": "/my-site/static/media/ShibaVid.60d7e1f2ad099c5e45a7.mp4",
-    "static/media/NetflixVid.mp4": "/my-site/static/media/NetflixVid.f7f184209b7818403205.mp4",
-    "static/media/WechatVid.mp4": "/my-site/static/media/WechatVid.7e757fa91e7d3f5df971.mp4",
-    "static/media/SortinVid.mp4": "/my-site/static/media/SortinVid.6bc14548a2d6e8e0dbb0.mp4",
+    "main.js": "/my-site/static/js/main.27ca3a36.js",
     "static/media/Dhananjai-sharma-resume.pdf": "/my-site/static/media/Dhananjai-sharma-resume.049915165fba69580046.pdf",
     "static/media/React-icon.png": "/my-site/static/media/React-icon.702a26a65699561606d2.png",
     "static/media/InternCert.pdf": "/my-site/static/media/InternCert.e5ff740c2b296a562d69.pdf",
@@ -18,10 +14,10 @@
     "static/media/p_logo.svg": "/my-site/static/media/p_logo.14f5a10cd798d37370e148820ac33a75.svg",
     "index.html": "/my-site/index.html",
     "main.34113e2c.css.map": "/my-site/static/css/main.34113e2c.css.map",
-    "main.5443c612.js.map": "/my-site/static/js/main.5443c612.js.map"
+    "main.27ca3a36.js.map": "/my-site/static/js/main.27ca3a36.js.map"
   },
   "entrypoints": [
     "static/css/main.34113e2c.css",
-    "static/js/main.5443c612.js"
+    "static/js/main.27ca3a36.js"
   ]
 }
