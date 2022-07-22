@@ -10,20 +10,28 @@ import Tooltip from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 // import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export const CarouselModal = () => {
-  const NetflixVid = `https://gdurl.com/fgE5`;
-  const ShibaVid = `https://gdurl.com/FBfR`;
-  const SortinVid = `https://gdurl.com/qYct`;
-  const WechatVid = `https://gdurl.com/QdRK`;
   const [index, setIndex] = useState(0);
   const [shibaPlay, setShibaPlay] = useState(false);
   const [sortPlay, setSortPlay] = useState(false);
   const [weChatPlay, setWeChatPlay] = useState(false);
   const [netflixPlay, setNetflixPlay] = useState(false);
+  const [loader, setloader] = useState({
+    shiba: true,
+    netflix: true,
+    wechat: true,
+    sort: true,
+  });
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+  // console.log(loader);
+  const NetflixVid = `https://gdurl.com/fgE5`;
+  const ShibaVid = `https://gdurl.com/FBfR`;
+  const SortinVid = `https://gdurl.com/qYct`;
+  const WechatVid = `https://gdurl.com/QdRK`;
   const theme = createTheme({
     components: {
       MuiTooltip: {
@@ -50,7 +58,6 @@ export const CarouselModal = () => {
     "Quick Sort",
     "Selection Sort",
   ];
-
   return (
     <Wrapper>
       <Carousel
@@ -88,6 +95,13 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
+                  {loader.shiba ? (
+                    <div className="loader">
+                      <CircularProgress size={100} />
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                   <span
                     onMouseEnter={() => setShibaPlay(true)}
                     onMouseLeave={() => setShibaPlay(false)}
@@ -99,6 +113,7 @@ export const CarouselModal = () => {
                       height={"90%"}
                       width={"100%"}
                       style={{ overflow: "hidden" }}
+                      onReady={() => setloader({ ...loader, shiba: false })}
                     />
                   </span>
                 </div>
@@ -177,6 +192,13 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
+                  {loader.sort ? (
+                    <div className="loader">
+                      <CircularProgress size={100} />
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                   <span
                     onMouseEnter={() => setSortPlay(true)}
                     onMouseLeave={() => setSortPlay(false)}
@@ -188,6 +210,7 @@ export const CarouselModal = () => {
                       style={{ overflow: "hidden" }}
                       height={"90%"}
                       width={"100%"}
+                      onReady={() => setloader({ ...loader, sort: false })}
                     />
                   </span>
                 </div>
@@ -259,6 +282,13 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
+                  {loader.netflix ? (
+                    <div className="loader">
+                      <CircularProgress size={100} />
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                   <span
                     onMouseEnter={() => setNetflixPlay(true)}
                     onMouseLeave={() => setNetflixPlay(false)}
@@ -270,6 +300,7 @@ export const CarouselModal = () => {
                       style={{ overflow: "hidden" }}
                       height={"90%"}
                       width={"100%"}
+                      onReady={() => setloader({ ...loader, netflix: false })}
                     />
                   </span>
                 </div>
@@ -330,6 +361,13 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
+                  {loader.wechat ? (
+                    <div className="loader">
+                      <CircularProgress size={100} />
+                    </div>
+                  ) : (
+                    <></>
+                  )}
                   <span
                     onMouseEnter={() => setWeChatPlay(true)}
                     onMouseLeave={() => setWeChatPlay(false)}
@@ -341,6 +379,7 @@ export const CarouselModal = () => {
                       style={{ overflow: "hidden" }}
                       height={"90%"}
                       width={"100%"}
+                      onReady={() => setloader({ ...loader, wechat: false })}
                     />
                   </span>
                 </div>

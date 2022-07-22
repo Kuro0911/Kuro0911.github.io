@@ -25,7 +25,7 @@ export const About = () => {
       ? setImgHW({ height: 115, width: 115 })
       : setImgHW({ height: 250, width: 250 });
     window.addEventListener("resize", function (event) {
-      console.log(document.body.clientWidth);
+      // console.log(document.body.clientWidth);
       document.body.clientWidth < 900
         ? setImgHW({ height: 115, width: 115 })
         : setImgHW({ height: 250, width: 250 });
