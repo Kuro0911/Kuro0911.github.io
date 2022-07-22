@@ -32,6 +32,7 @@ const Wrapper = styled.div`
     }
   }
   .left {
+    overflow: hidden;
     width: 60%;
     margin-left: 10%;
     cursor: pointer;
@@ -40,6 +41,14 @@ const Wrapper = styled.div`
     }
     @media screen and (max-width: 900px) {
       width: 100%;
+    }
+    .loader {
+      overflow: hidden;
+      margin-top: 10%;
+      margin-bottom: -30%;
+      .MuiCircularProgress-svg {
+        color: #64ffda;
+      }
     }
   }
   .right {
