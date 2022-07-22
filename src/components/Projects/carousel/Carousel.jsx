@@ -5,10 +5,6 @@ import Wrapper from "./Carousel.style";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import ReactPlayer from "react-player";
-import ShibaVid from "./videos/ShibaVid.mp4";
-import SortinVid from "./videos/SortinVid.mp4";
-import WechatVid from "./videos/WechatVid.mp4";
-import NetflixVid from "./videos/NetflixVid.mp4";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Tooltip from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
@@ -16,6 +12,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 // import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 export const CarouselModal = () => {
+  const NetflixVid = `https://gdurl.com/fgE5`;
+  const ShibaVid = `https://gdurl.com/FBfR`;
+  const SortinVid = `https://gdurl.com/qYct`;
+  const WechatVid = `https://gdurl.com/QdRK`;
   const [index, setIndex] = useState(0);
   const [shibaPlay, setShibaPlay] = useState(false);
   const [sortPlay, setSortPlay] = useState(false);
