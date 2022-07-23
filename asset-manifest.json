@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.34113e2c.css",
-    "main.js": "/my-site/static/js/main.2a32c4be.js",
-    "static/media/Dhananjai-sharma-resume.pdf": "/my-site/static/media/Dhananjai-sharma-resume.049915165fba69580046.pdf",
-    "static/media/React-icon.png": "/my-site/static/media/React-icon.702a26a65699561606d2.png",
-    "static/media/InternCert.pdf": "/my-site/static/media/InternCert.e5ff740c2b296a562d69.pdf",
-    "static/media/profile.jpg": "/my-site/static/media/profile.7e5c2c8ba8b3911f83de.jpg",
-    "static/media/fold.png": "/my-site/static/media/fold.190ab4f767a953dcaa4c.png",
-    "static/media/nodejs-logo.svg": "/my-site/static/media/nodejs-logo.f917ac5c89daa244c1aa10cf47789692.svg",
-    "static/media/cpp_logo.svg": "/my-site/static/media/cpp_logo.0bd43dff6057d03b1061db19f79e6c4e.svg",
-    "static/media/c_logo.svg": "/my-site/static/media/c_logo.ac27de8477fe6c13739a9e3f385b75cc.svg",
-    "static/media/js_logo.svg": "/my-site/static/media/js_logo.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
-    "static/media/p_logo.svg": "/my-site/static/media/p_logo.14f5a10cd798d37370e148820ac33a75.svg",
-    "index.html": "/my-site/index.html",
-    "main.34113e2c.css.map": "/my-site/static/css/main.34113e2c.css.map",
-    "main.2a32c4be.js.map": "/my-site/static/js/main.2a32c4be.js.map"
+    "main.css": "/static/css/main.34113e2c.css",
+    "main.js": "/static/js/main.409ad598.js",
+    "static/media/Dhananjai-sharma-resume.pdf": "/static/media/Dhananjai-sharma-resume.049915165fba69580046.pdf",
+    "static/media/React-icon.png": "/static/media/React-icon.702a26a65699561606d2.png",
+    "static/media/InternCert.pdf": "/static/media/InternCert.e5ff740c2b296a562d69.pdf",
+    "static/media/profile.jpg": "/static/media/profile.7e5c2c8ba8b3911f83de.jpg",
+    "static/media/fold.png": "/static/media/fold.190ab4f767a953dcaa4c.png",
+    "static/media/nodejs-logo.svg": "/static/media/nodejs-logo.f917ac5c89daa244c1aa10cf47789692.svg",
+    "static/media/cpp_logo.svg": "/static/media/cpp_logo.0bd43dff6057d03b1061db19f79e6c4e.svg",
+    "static/media/c_logo.svg": "/static/media/c_logo.ac27de8477fe6c13739a9e3f385b75cc.svg",
+    "static/media/js_logo.svg": "/static/media/js_logo.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
+    "static/media/p_logo.svg": "/static/media/p_logo.14f5a10cd798d37370e148820ac33a75.svg",
+    "index.html": "/index.html",
+    "main.34113e2c.css.map": "/static/css/main.34113e2c.css.map",
+    "main.409ad598.js.map": "/static/js/main.409ad598.js.map"
   },
   "entrypoints": [
     "static/css/main.34113e2c.css",
-    "static/js/main.2a32c4be.js"
+    "static/js/main.409ad598.js"
   ]
 }
