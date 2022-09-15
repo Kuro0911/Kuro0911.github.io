@@ -55,7 +55,7 @@ export const DesContainer = styled.div`
     font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
       -apple-system, system-ui, sans-serif;
   }
-  span {
+  a {
     cursor: pointer;
     color: #64ffda;
     font-size: 1.5w;
@@ -65,7 +65,7 @@ export const DesContainer = styled.div`
     text {
       font-size: 3vw;
     }
-    span {
+    a {
       font-size: 3vw;
     }
   }
@@ -73,7 +73,7 @@ export const DesContainer = styled.div`
     text {
       font-size: 4vw;
     }
-    span {
+    a {
       font-size: 4vw;
     }
   }

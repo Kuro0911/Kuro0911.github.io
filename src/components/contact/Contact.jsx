@@ -27,44 +27,20 @@ export const Contact = () => {
             <p>
               <text>
                 Feel free to ping me on my socials like{" "}
-                <span
-                  onClick={() => {
-                    window.open("https://github.com/Kuro0911");
-                  }}
-                >
-                  Github
-                </span>
-                ,{" "}
-                <span
-                  onClick={() => {
-                    window.open(
-                      "https://www.linkedin.com/in/dhananjai-sharma09/"
-                    );
-                  }}
-                >
+                <a href="https://github.com/Kuro0911">Github</a>,{" "}
+                <a href="https://www.linkedin.com/in/dhananjai-sharma09/">
                   LinkedIn
-                </span>{" "}
-                or{" "}
-                <span
-                  onClick={() => {
-                    console.log("discord");
-                  }}
-                >
-                  Discord
-                </span>{" "}
-                at any time and ill try my best to get back to you ASAP
+                </a>{" "}
+                or <a href="https://github.com/Kuro0911">Discord</a> at any time
+                and ill try my best to get back to you ASAP
               </text>
             </p>
             <p>
               <text>
                 You can also mail me at{" "}
-                <span
-                  onClick={() => {
-                    window.location.href = "mailto:dhananjaisharma09@gmail.com";
-                  }}
-                >
+                <a href="mailto:dhananjaisharma09@gmail.com">
                   dhananjaisharma09@gmail.com
-                </span>
+                </a>
               </text>
             </p>
           </DesContainer>
