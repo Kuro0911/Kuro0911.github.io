@@ -302,6 +302,12 @@ export const CarouselModal = () => {
                       width={"100%"}
                       onReady={() => setloader({ ...loader, netflix: false })}
                     />
+                    {/* <iframe
+                      src="https://kuro0911.github.io/netflix-clone/"
+                      title="netflix"
+                      height={350}
+                      width={650}
+                    /> */}
                   </span>
                 </div>
                 <div className="right">
