@@ -68,10 +68,12 @@
     "i": "^0.3.7",
     "mui-image": "^1.0.7",
     "npm": "^8.14.0",
+    "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.4.0",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.10.1",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "scss": "^0.2.4"
   }
 }
