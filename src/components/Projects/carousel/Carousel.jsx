@@ -14,8 +14,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 export const CarouselModal = () => {
   const [index, setIndex] = useState(0);
-  const [shibaPlay, setShibaPlay] = useState(false);
-  const [sortPlay, setSortPlay] = useState(false);
+  // const [shibaPlay, setShibaPlay] = useState(false);
+  // const [sortPlay, setSortPlay] = useState(false);
   const [weChatPlay, setWeChatPlay] = useState(false);
   const [netflixPlay, setNetflixPlay] = useState(false);
   const [loader, setloader] = useState({
@@ -29,8 +29,8 @@ export const CarouselModal = () => {
   };
   // console.log(loader);
   const NetflixVid = `https://gdurl.com/fgE5`;
-  const ShibaVid = `https://gdurl.com/FBfR`;
-  const SortinVid = `https://gdurl.com/qYct`;
+  // const ShibaVid = `https://gdurl.com/FBfR`;
+  // const SortinVid = `https://gdurl.com/qYct`;
   const WechatVid = `https://gdurl.com/QdRK`;
 
   const theme = createTheme({
