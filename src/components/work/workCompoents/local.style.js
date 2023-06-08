@@ -6,6 +6,7 @@ const InternWrapper = styled.div`
   color: #ccd6f6;
   height: 60vh;
   scroll-snap-align: start;
+
   h1 {
     margin-left: 1em;
     margin-bottom: 1em;
@@ -21,6 +22,7 @@ const InternWrapper = styled.div`
     }
   }
   .para-wrap {
+    margin-bottom: 2em;
     text-align: left;
     .list {
       li {
@@ -39,6 +41,11 @@ const InternWrapper = styled.div`
       .date {
         font-size: small;
         color: #64ffda;
+        margin-top: 0.5%;
+      }
+      .location {
+        font-size: small;
+        color: #ee82ee;
         margin-top: 0.5%;
       }
       a {

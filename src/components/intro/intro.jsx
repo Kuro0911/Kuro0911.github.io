@@ -6,6 +6,7 @@ import IntroWrapper, {
   NameContainer,
 } from "./intro.style";
 import "animate.css";
+import "./style.scss";
 
 export const Intro = () => {
   const [firstName, setFirstName] = useState("Dhananjai");
@@ -22,6 +23,19 @@ export const Intro = () => {
           <br />
           <text className="jp">こんにちはみんなさん私は</text>
         </GreetContainer>
+        <div className="wrapper-glitch">
+          <h1
+            class={`glitch ${firstName !== "Dhananjai" ? "jp" : "eng"}`}
+            data-text={firstName}
+            onMouseEnter={handleChangeF}
+            onMouseLeave={handleChangeF}
+          >
+            {firstName}
+          </h1>
+          <h1 class="glitch eng" data-text="Sharma">
+            Sharma
+          </h1>
+        </div>
         <NameContainer text={firstName}>
           <text onMouseEnter={handleChangeF} onMouseLeave={handleChangeF}>
             {firstName}

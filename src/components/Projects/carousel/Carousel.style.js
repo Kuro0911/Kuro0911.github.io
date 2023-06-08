@@ -33,12 +33,8 @@ const Wrapper = styled.div`
   }
   .left {
     overflow: hidden;
-    width: 60%;
-    margin-left: 10%;
+    width: 70%;
     cursor: pointer;
-    @media screen and (max-width: 1200px) {
-      width: 70%;
-    }
     @media screen and (max-width: 900px) {
       width: 100%;
     }
@@ -53,10 +49,8 @@ const Wrapper = styled.div`
   }
   .right {
     width: 40%;
-    margin-right: 5%;
     @media screen and (max-width: 1200px) {
       width: 30%;
-      margin-left: 2%;
     }
     @media screen and (max-width: 900px) {
       width: 80%;
@@ -85,6 +79,7 @@ const Wrapper = styled.div`
       background-repeat: no-repeat;
       transition: background-size 400ms;
       cursor: pointer;
+      margin-left: 1em;
     }
     a:hover {
       background-size: 0 3px, 100% 3px;
@@ -93,6 +88,7 @@ const Wrapper = styled.div`
     color: #64ffda;
   }
   .about {
+    margin-left: 1em;
     span {
       color: #64ffda;
       font-size: 10px;
@@ -113,6 +109,7 @@ const Wrapper = styled.div`
     color: #8892b0;
   }
   .tags {
+    margin-left: 1em;
     text-align: left;
     span {
       font-size: 14px;
@@ -122,6 +119,7 @@ const Wrapper = styled.div`
     color: #ccd6f6;
   }
   .gotoContainer {
+    margin-left: 1em;
     text-align: left;
   }
   .goto {

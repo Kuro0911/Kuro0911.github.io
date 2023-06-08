@@ -50,6 +50,9 @@ export const GreetContainer = styled.div`
   }
 `;
 export const NameContainer = styled.div`
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
   animation: fadeIn 2s;
   text {
     cursor: pointer;
@@ -113,4 +116,5 @@ export const DesContainer = styled.div`
     }
   }
 `;
+
 export default IntroWrapper;

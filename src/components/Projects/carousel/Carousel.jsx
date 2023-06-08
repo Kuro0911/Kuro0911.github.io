@@ -14,8 +14,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 export const CarouselModal = () => {
   const [index, setIndex] = useState(0);
-  const [shibaPlay, setShibaPlay] = useState(false);
-  const [sortPlay, setSortPlay] = useState(false);
+  // const [shibaPlay, setShibaPlay] = useState(false);
+  // const [sortPlay, setSortPlay] = useState(false);
   const [weChatPlay, setWeChatPlay] = useState(false);
   const [netflixPlay, setNetflixPlay] = useState(false);
   const [loader, setloader] = useState({
@@ -29,9 +29,10 @@ export const CarouselModal = () => {
   };
   // console.log(loader);
   const NetflixVid = `https://gdurl.com/fgE5`;
-  const ShibaVid = `https://gdurl.com/FBfR`;
-  const SortinVid = `https://gdurl.com/qYct`;
+  // const ShibaVid = `https://gdurl.com/FBfR`;
+  // const SortinVid = `https://gdurl.com/qYct`;
   const WechatVid = `https://gdurl.com/QdRK`;
+
   const theme = createTheme({
     components: {
       MuiTooltip: {
@@ -51,12 +52,10 @@ export const CarouselModal = () => {
     },
   });
   const sortAlgoNames = [
-    "Heap Sort",
-    "Bubble Sort",
-    "Insertion Sort",
-    "Merge Sort",
-    "Quick Sort",
-    "Selection Sort",
+    "Created intuitive user interfaces to enhance the user experience during algorithm visualization.",
+    "Utilized modern web technologies such as React, JavaScript, HTML, and CSS to build a responsive and performant web application.",
+    "Actively engaged in iterative development and incorporated user feedback to continuously improve the website's features and usability",
+    "Algorithms such as Selection Sort, Merge Sort, Depth First Search, etc are supported",
   ];
   return (
     <Wrapper>
@@ -84,7 +83,7 @@ export const CarouselModal = () => {
                   <div>
                     <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
                     <br />
-                    <span>{"Hover on the picture to play video"}</span>
+                    <span>{"You can interact with the project"}</span>
                   </div>
                 </React.Fragment>
               }
@@ -95,7 +94,7 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
-                  {loader.shiba ? (
+                  {/* {loader.shiba ? (
                     <div className="loader">
                       <CircularProgress size={100} />
                     </div>
@@ -110,12 +109,18 @@ export const CarouselModal = () => {
                       url={ShibaVid}
                       playing={shibaPlay}
                       loop
-                      height={"90%"}
+                      height={"90%"} 
                       width={"100%"}
                       style={{ overflow: "hidden" }}
                       onReady={() => setloader({ ...loader, shiba: false })}
                     />
-                  </span>
+                  </span> */}
+                  <iframe
+                    src="https://kuro0911.github.io/Shiba---A-chat-Bot/"
+                    title="netflix"
+                    height={540}
+                    width={800}
+                  />
                 </div>
 
                 <div className="right">
@@ -182,7 +187,7 @@ export const CarouselModal = () => {
                 <React.Fragment>
                   <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
                   <br />
-                  <span>{"Hover on the picture to play video"}</span>
+                  <span>{"You can interact with the project"}</span>
                 </React.Fragment>
               }
               arrow
@@ -192,7 +197,7 @@ export const CarouselModal = () => {
             >
               <div className="container">
                 <div className="left">
-                  {loader.sort ? (
+                  {/* {loader.sort ? (
                     <div className="loader">
                       <CircularProgress size={100} />
                     </div>
@@ -212,19 +217,24 @@ export const CarouselModal = () => {
                       width={"100%"}
                       onReady={() => setloader({ ...loader, sort: false })}
                     />
-                  </span>
+                  </span> */}
+                  <iframe
+                    src="https://algovizlab.netlify.app/"
+                    title="netflix"
+                    height={540}
+                    width={800}
+                  />
                 </div>
                 <div className="right">
                   <div className="heading">
-                    <a href="https://relaxed-jelly-706d87.netlify.app/">
-                      SortViz
-                    </a>
+                    <a href="https://algovizlab.netlify.app/">AlgoViz</a>
                   </div>
                   <br />
                   <div className="about">
                     <p>
-                      SortViz has 6 algorithms implemented for sorting namely{" "}
-                      <br />
+                      Independently conceptualized, designed, developed, and
+                      deployed a website using Next.js framework to enable users
+                      to visualize algorithms. <br />
                       <br />
                       {sortAlgoNames.map((val) => {
                         return (
@@ -253,10 +263,7 @@ export const CarouselModal = () => {
                     >
                       <GitHubIcon className="icon" />
                     </a>
-                    <a
-                      className="goto"
-                      href="https://relaxed-jelly-706d87.netlify.app/"
-                    >
+                    <a className="goto" href="https://algovizlab.netlify.app/">
                       <LaunchIcon className="icon" />
                     </a>
                   </div>
@@ -302,6 +309,12 @@ export const CarouselModal = () => {
                       width={"100%"}
                       onReady={() => setloader({ ...loader, netflix: false })}
                     />
+                    {/* <iframe
+                      src="https://kuro0911.github.io/netflix-clone/"
+                      title="netflix"
+                      height={350}
+                      width={650}
+                    /> */}
                   </span>
                 </div>
                 <div className="right">

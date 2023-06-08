@@ -26,7 +26,7 @@ export const Social = () => {
           window.location.href = "mailto:dhananjaisharma09@gmail.com";
         }}
       />
-      <div className="line"></div>>
+      <div className="line"></div>
     </SocialWrapper>
   );
 };
