@@ -395,32 +395,38 @@ export const CarouselModal = () => {
               </div>
               <div className="right">
                 <div className="heading">
-                  <a href="https://wechat-bykuro.web.app/">We Chat</a>
+                  <a href="https://wechat-bykuro.web.app/">
+                    Reden Chatting Website
+                  </a>
                 </div>
                 <br />
                 <div className="about">
                   <p>
-                    Wechat is one of the projects which I am the most proud of I
-                    learned a lot from this starting from adding databases using
-                    <code> firebase</code> adding google auth using firebase
-                    using <code>react reducers</code>,{" "}
-                    <code>react routers</code> it was a great project and I
-                    enjoyed the most while building it
+                    Implemented real-time messaging functionality, allowing
+                    users to engage in instant text-based conversations Also
+                    integrated <code>Firebase's</code> authentication and
+                    database services to ensure secure user registration, login,
+                    and data storage
                   </p>
                 </div>
                 <br />
                 <div className="tags">
-                  <span>ReactJs</span>
+                  <span>Svetekit</span>
                   <span>Firebase</span>
                   <span>NodeJs</span>
-                  <span>MongoDb</span>
                 </div>
                 <br />
                 <div className="gotoContainer">
-                  <a className="goto" href="https://github.com/Kuro0911/WeChat">
+                  <a
+                    className="goto"
+                    href="https://master--reden-app.netlify.app/"
+                  >
                     <GitHubIcon className="icon" />
                   </a>
-                  <a className="goto" href="https://wechat-bykuro.web.app/">
+                  <a
+                    className="goto"
+                    href="https://github.com/Kuro0911/fuwa-git"
+                  >
                     <LaunchIcon className="icon" />
                   </a>
                 </div>

@@ -17,10 +17,10 @@ export const JpWrapper = styled.div`
   display: flex;
   justify-content: center;
   .exp {
-    width: 250px;
+    width: 320px;
   }
   .skill {
-    width: 200px;
+    width: 240px;
   }
   text {
     font-family: monospace;
