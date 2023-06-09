@@ -35,8 +35,8 @@ const Wrapper = styled.div`
     overflow: hidden;
     width: 70%;
     cursor: pointer;
-    @media screen and (max-width: 900px) {
-      width: 100%;
+    @media screen and (max-width: 1024px) {
+      display: none;
     }
     .loader {
       overflow: hidden;
@@ -49,16 +49,21 @@ const Wrapper = styled.div`
   }
   .right {
     width: 40%;
-    @media screen and (max-width: 1200px) {
-      width: 30%;
-    }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1024px) {
       width: 80%;
+      margin-left: 10%;
+      height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-contents: center;
+      align-items: center;
     }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 1024px) {
+      margin-left: -1em;
     }
   }
   .heading {
+    overflow: hidden;
     a {
       text-decoration: none;
       color: inherit;
@@ -134,34 +139,35 @@ const Wrapper = styled.div`
       color: #64ffda;
     }
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     .heading {
-      margin-bottom: -7%;
       a {
-        font-size: medium;
+        margin-bottom: 3em;
+        font-size: 2rem;
       }
     }
     .about {
       span {
-        font-size: 10px;
+        font-size: 1rem;
       }
       p {
-        font-size: x-small;
+        text-align: center;
+        font-size: 1rem;
         code {
-          font-size: 10px;
+          font-size: 1rem;
         }
       }
     }
     .tags {
-      margin-top: -10%;
+      margin-top: 2em;
       span {
-        font-size: 8px;
+        font-size: 1rem;
       }
     }
     .gotoContainer {
-      margin-top: -8%;
+      margin-top: 1em;
       .icon {
-        font-size: 15px;
+        font-size: 1rem;
       }
     }
   }

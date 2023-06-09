@@ -3,7 +3,6 @@ import IntroWrapper, {
   Container,
   DesContainer,
   GreetContainer,
-  NameContainer,
 } from "./intro.style";
 import "animate.css";
 import "./style.scss";
@@ -36,12 +35,12 @@ export const Intro = () => {
             Sharma
           </h1>
         </div>
-        <NameContainer text={firstName}>
+        {/* <NameContainer text={firstName}>
           <text onMouseEnter={handleChangeF} onMouseLeave={handleChangeF}>
             {firstName}
           </text>
           <text className="lname"> Sharma</text>
-        </NameContainer>
+        </NameContainer> */}
         <DesContainer>
           <text>I build stuff for the web</text>
           <br />

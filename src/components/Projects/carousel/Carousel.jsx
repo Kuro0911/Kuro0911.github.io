@@ -6,8 +6,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import ReactPlayer from "react-player";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import Tooltip from "@mui/material/Tooltip";
-import Zoom from "@mui/material/Zoom";
+// import Tooltip from "@mui/material/Tooltip";
+// import Zoom from "@mui/material/Zoom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 // import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -16,7 +16,7 @@ export const CarouselModal = () => {
   const [index, setIndex] = useState(0);
   // const [shibaPlay, setShibaPlay] = useState(false);
   // const [sortPlay, setSortPlay] = useState(false);
-  const [weChatPlay, setWeChatPlay] = useState(false);
+  // const [weChatPlay, setWeChatPlay] = useState(false);
   const [netflixPlay, setNetflixPlay] = useState(false);
   const [loader, setloader] = useState({
     shiba: true,
@@ -31,7 +31,7 @@ export const CarouselModal = () => {
   const NetflixVid = `https://gdurl.com/fgE5`;
   // const ShibaVid = `https://gdurl.com/FBfR`;
   // const SortinVid = `https://gdurl.com/qYct`;
-  const WechatVid = `https://gdurl.com/QdRK`;
+  // const WechatVid = `https://gdurl.com/QdRK`;
 
   const theme = createTheme({
     components: {
@@ -67,19 +67,9 @@ export const CarouselModal = () => {
       >
         <Carousel.Item>
           <ThemeProvider theme={theme}>
-            <Tooltip
+            {/* <Tooltip
               title={
                 <React.Fragment>
-                  {/* <span
-                    style={{
-                      color: "#64ffda",
-                      display: "flex",
-                      justifyContent: "end",
-                      marginBottom: "-10%",
-                    }}
-                  >
-                    <ArrowDropUpIcon fontSize="large" />
-                  </span> */}
                   <div>
                     <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
                     <br />
@@ -91,10 +81,10 @@ export const CarouselModal = () => {
               disableFocusListener
               TransitionComponent={Zoom}
               placement={"bottom-start"}
-            >
-              <div className="container">
-                <div className="left">
-                  {/* {loader.shiba ? (
+            > */}
+            <div className="container">
+              <div className="left">
+                {/* {loader.shiba ? (
                     <div className="loader">
                       <CircularProgress size={100} />
                     </div>
@@ -115,74 +105,74 @@ export const CarouselModal = () => {
                       onReady={() => setloader({ ...loader, shiba: false })}
                     />
                   </span> */}
-                  <iframe
-                    src="https://kuro0911.github.io/Shiba---A-chat-Bot/"
-                    title="netflix"
-                    height={540}
-                    width={800}
-                  />
-                </div>
+                <iframe
+                  src="https://kuro0911.github.io/Shiba---A-chat-Bot/"
+                  title="shiba"
+                  height={540}
+                  width={800}
+                />
+              </div>
 
-                <div className="right">
-                  <div className="heading">
-                    <a href="https://kuro0911.github.io/Shiba---A-chat-Bot/">
-                      Shiba The crypto bot
-                    </a>
-                  </div>
-                  <br />
-                  <div className="about">
-                    <p>
-                      Shiba is a <code>CHATBOT</code> made to help new users to
-                      get into crypto-currency by
-                      <br />
-                      <br />
-                      <span>
-                        <ArrowRightIcon />
-                      </span>
-                      Providing them various trading platforms to choose from{" "}
-                      <br />
-                      <span>
-                        <ArrowRightIcon />
-                      </span>
-                      Implementing basic trading strategies to help the users{" "}
-                      <br />
-                      <span>
-                        <ArrowRightIcon />
-                      </span>
-                      Providing the real time price of various coins using API
-                      <br />
-                    </p>
-                  </div>
-                  <br />
-                  <div className="tags">
-                    <span>CryptoCurrency</span>
-                    <span>JavaSript</span>
-                    <span>ReactJS</span>
-                    <span>ChatBot</span>
-                  </div>
-                  <br />
-                  <div className="gotoContainer">
-                    <a
-                      className="goto"
-                      href="https://github.com/Kuro0911/Shiba---A-chat-Bot"
-                    >
-                      <GitHubIcon className="icon" />
-                    </a>
-                    <a
-                      className="goto"
-                      href="https://kuro0911.github.io/Shiba---A-chat-Bot/"
-                    >
-                      <LaunchIcon className="icon" />
-                    </a>
-                  </div>
+              <div className="right">
+                <div className="heading">
+                  <a href="https://kuro0911.github.io/Shiba---A-chat-Bot/">
+                    Shiba The crypto bot
+                  </a>
+                </div>
+                <br />
+                <div className="about">
+                  <p>
+                    Shiba is a <code>CHATBOT</code> made to help new users to
+                    get into crypto-currency by
+                    <br />
+                    <br />
+                    <span>
+                      <ArrowRightIcon />
+                    </span>
+                    Providing them various trading platforms to choose from{" "}
+                    <br />
+                    <span>
+                      <ArrowRightIcon />
+                    </span>
+                    Implementing basic trading strategies to help the users{" "}
+                    <br />
+                    <span>
+                      <ArrowRightIcon />
+                    </span>
+                    Providing the real time price of various coins using API
+                    <br />
+                  </p>
+                </div>
+                <br />
+                <div className="tags">
+                  <span>CryptoCurrency</span>
+                  <span>JavaSript</span>
+                  <span>ReactJS</span>
+                  <span>ChatBot</span>
+                </div>
+                <br />
+                <div className="gotoContainer">
+                  <a
+                    className="goto"
+                    href="https://github.com/Kuro0911/Shiba---A-chat-Bot"
+                  >
+                    <GitHubIcon className="icon" />
+                  </a>
+                  <a
+                    className="goto"
+                    href="https://kuro0911.github.io/Shiba---A-chat-Bot/"
+                  >
+                    <LaunchIcon className="icon" />
+                  </a>
                 </div>
               </div>
-            </Tooltip>
+            </div>
+            {/* </Tooltip> */}
           </ThemeProvider>
         </Carousel.Item>
         <Carousel.Item>
           <ThemeProvider theme={theme}>
-            <Tooltip
+            {/* <Tooltip
               title={
                 <React.Fragment>
                   <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
@@ -194,10 +184,10 @@ export const CarouselModal = () => {
               disableFocusListener
               TransitionComponent={Zoom}
               placement={"bottom-start"}
-            >
-              <div className="container">
-                <div className="left">
-                  {/* {loader.sort ? (
+            > */}
+            <div className="container">
+              <div className="left">
+                {/* {loader.sort ? (
                     <div className="loader">
                       <CircularProgress size={100} />
                     </div>
@@ -218,63 +208,61 @@ export const CarouselModal = () => {
                       onReady={() => setloader({ ...loader, sort: false })}
                     />
                   </span> */}
-                  <iframe
-                    src="https://algovizlab.netlify.app/"
-                    title="netflix"
-                    height={540}
-                    width={800}
-                  />
+                <iframe
+                  src="https://algovizlab.netlify.app/"
+                  title="algoviz"
+                  height={540}
+                  width={800}
+                />
+              </div>
+              <div className="right">
+                <div className="heading">
+                  <a href="https://algovizlab.netlify.app/">AlgoViz</a>
                 </div>
-                <div className="right">
-                  <div className="heading">
-                    <a href="https://algovizlab.netlify.app/">AlgoViz</a>
-                  </div>
-                  <br />
-                  <div className="about">
-                    <p>
-                      Independently conceptualized, designed, developed, and
-                      deployed a website using Next.js framework to enable users
-                      to visualize algorithms. <br />
-                      <br />
-                      {sortAlgoNames.map((val) => {
-                        return (
-                          <div
-                            style={{ dispay: "flex", fontFamily: "inherit" }}
-                          >
-                            <span>
-                              <ArrowRightIcon />
-                            </span>
-                            {val}
-                          </div>
-                        );
-                      })}
-                    </p>
-                  </div>
-                  <div className="tags">
-                    <span>Sorting Algorithms</span>
-                    <span>JavaSript</span>
-                    <span>NextJS</span>
-                  </div>
-                  <br />
-                  <div className="gotoContainer">
-                    <a
-                      className="goto"
-                      href="https://github.com/Kuro0911/Sorting-Visualizer"
-                    >
-                      <GitHubIcon className="icon" />
-                    </a>
-                    <a className="goto" href="https://algovizlab.netlify.app/">
-                      <LaunchIcon className="icon" />
-                    </a>
-                  </div>
+                <br />
+                <div className="about">
+                  <p>
+                    Independently conceptualized, designed, developed, and
+                    deployed a website using Next.js framework to enable users
+                    to visualize algorithms. <br />
+                    <br />
+                    {sortAlgoNames.map((val) => {
+                      return (
+                        <div style={{ dispay: "flex", fontFamily: "inherit" }}>
+                          <span>
+                            <ArrowRightIcon />
+                          </span>
+                          {val}
+                        </div>
+                      );
+                    })}
+                  </p>
+                </div>
+                <div className="tags">
+                  <span>Sorting Algorithms</span>
+                  <span>JavaSript</span>
+                  <span>NextJS</span>
+                </div>
+                <br />
+                <div className="gotoContainer">
+                  <a
+                    className="goto"
+                    href="https://github.com/Kuro0911/Sorting-Visualizer"
+                  >
+                    <GitHubIcon className="icon" />
+                  </a>
+                  <a className="goto" href="https://algovizlab.netlify.app/">
+                    <LaunchIcon className="icon" />
+                  </a>
                 </div>
               </div>
-            </Tooltip>
+            </div>
+            {/* </Tooltip> */}
           </ThemeProvider>
         </Carousel.Item>
         <Carousel.Item>
           <ThemeProvider theme={theme}>
-            <Tooltip
+            {/* <Tooltip
               title={
                 <React.Fragment>
                   <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
@@ -286,80 +274,83 @@ export const CarouselModal = () => {
               disableFocusListener
               TransitionComponent={Zoom}
               placement={"bottom-start"}
-            >
-              <div className="container">
-                <div className="left">
-                  {loader.netflix ? (
-                    <div className="loader">
-                      <CircularProgress size={100} />
-                    </div>
-                  ) : (
-                    <></>
-                  )}
-                  <span
-                    onMouseEnter={() => setNetflixPlay(true)}
-                    onMouseLeave={() => setNetflixPlay(false)}
-                  >
-                    <ReactPlayer
-                      url={NetflixVid}
-                      playing={netflixPlay}
-                      loop
-                      style={{ overflow: "hidden" }}
-                      height={"90%"}
-                      width={"100%"}
-                      onReady={() => setloader({ ...loader, netflix: false })}
-                    />
-                    {/* <iframe
+            > */}
+            <div className="container">
+              <div className="left">
+                {loader.netflix ? (
+                  <div className="loader">
+                    <CircularProgress size={100} />
+                  </div>
+                ) : (
+                  <></>
+                )}
+                <span
+                  onMouseEnter={() => setNetflixPlay(true)}
+                  onMouseLeave={() => setNetflixPlay(false)}
+                >
+                  <ReactPlayer
+                    url={NetflixVid}
+                    playing={netflixPlay}
+                    loop
+                    style={{ overflow: "hidden" }}
+                    height={"90%"}
+                    width={"100%"}
+                    onReady={() => setloader({ ...loader, netflix: false })}
+                  />
+                  {/* <iframe
                       src="https://kuro0911.github.io/netflix-clone/"
                       title="netflix"
                       height={350}
                       width={650}
                     /> */}
-                  </span>
+                </span>
+              </div>
+              <div className="right">
+                <div className="heading">
+                  <a href="https://kuro0911.github.io/netflix-clone/">
+                    Netflix Clone
+                  </a>
                 </div>
-                <div className="right">
-                  <div className="heading">
-                    <a href="https://kuro0911.github.io/netflix-clone/">
-                      Netflix Clone
-                    </a>
-                  </div>
-                  <br />
-                  <div className="about">
-                    <p>
-                      A Netflix web clone which plays trailers for trending
-                      movies and shows
-                    </p>
-                  </div>
-                  <br />
-                  <div className="tags">
-                    <span>ReactJS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
-                    <span>react-youtube</span>
-                  </div>
-                  <br />
-                  <div className="gotoContainer">
-                    <a
-                      className="goto"
-                      href="https://github.com/Kuro0911/netflix-clone"
-                    >
-                      <GitHubIcon className="icon" />
-                    </a>
-                    <a
-                      className="goto"
-                      href="https://kuro0911.github.io/netflix-clone/"
-                    >
-                      <LaunchIcon className="icon" />
-                    </a>
-                  </div>
+                <br />
+                <div className="about">
+                  <p>
+                    Successfully built and deployed a Netflix clone web
+                    application using React.js. Implemented a responsive user
+                    interface replicating the look and feel of the Netflix
+                    platform. Integrated APIs to fetch and display movie and TV
+                    show data, including genres, ratings, and thumbnails.
+                  </p>
+                </div>
+                <br />
+                <div className="tags">
+                  <span>ReactJS</span>
+                  <span>JavaScript</span>
+                  <span>API</span>
+                  <span>react-youtube</span>
+                </div>
+                <br />
+                <div className="gotoContainer">
+                  <a
+                    className="goto"
+                    href="https://github.com/Kuro0911/netflix-clone"
+                  >
+                    <GitHubIcon className="icon" />
+                  </a>
+                  <a
+                    className="goto"
+                    href="https://kuro0911.github.io/netflix-clone/"
+                  >
+                    <LaunchIcon className="icon" />
+                  </a>
                 </div>
               </div>
-            </Tooltip>
+            </div>
+            {/* </Tooltip> */}
           </ThemeProvider>
         </Carousel.Item>
         <Carousel.Item>
           <ThemeProvider theme={theme}>
-            <Tooltip
+            {/* <Tooltip
               title={
                 <React.Fragment>
                   <code style={{ color: "#64ffda" }}>{"#TIP"}</code>
@@ -371,17 +362,17 @@ export const CarouselModal = () => {
               disableFocusListener
               TransitionComponent={Zoom}
               placement={"bottom-start"}
-            >
-              <div className="container">
-                <div className="left">
-                  {loader.wechat ? (
+            > */}
+            <div className="container">
+              <div className="left">
+                {/* {loader.wechat ? (
                     <div className="loader">
                       <CircularProgress size={100} />
                     </div>
                   ) : (
                     <></>
-                  )}
-                  <span
+                  )} */}
+                {/* <span
                     onMouseEnter={() => setWeChatPlay(true)}
                     onMouseLeave={() => setWeChatPlay(false)}
                   >
@@ -394,46 +385,48 @@ export const CarouselModal = () => {
                       width={"100%"}
                       onReady={() => setloader({ ...loader, wechat: false })}
                     />
-                  </span>
+                  </span> */}
+                <iframe
+                  src="https://master--reden-app.netlify.app/auth"
+                  title="reden"
+                  height={540}
+                  width={800}
+                />
+              </div>
+              <div className="right">
+                <div className="heading">
+                  <a href="https://wechat-bykuro.web.app/">We Chat</a>
                 </div>
-                <div className="right">
-                  <div className="heading">
-                    <a href="https://wechat-bykuro.web.app/">We Chat</a>
-                  </div>
-                  <br />
-                  <div className="about">
-                    <p>
-                      Wechat is one of the projects which I am the most proud of
-                      I learned a lot from this starting from adding databases
-                      using
-                      <code> firebase</code> adding google auth using firebase
-                      using <code>react reducers</code>,{" "}
-                      <code>react routers</code> it was a great project and I
-                      enjoyed the most while building it
-                    </p>
-                  </div>
-                  <br />
-                  <div className="tags">
-                    <span>ReactJs</span>
-                    <span>Firebase</span>
-                    <span>NodeJs</span>
-                    <span>MongoDb</span>
-                  </div>
-                  <br />
-                  <div className="gotoContainer">
-                    <a
-                      className="goto"
-                      href="https://github.com/Kuro0911/WeChat"
-                    >
-                      <GitHubIcon className="icon" />
-                    </a>
-                    <a className="goto" href="https://wechat-bykuro.web.app/">
-                      <LaunchIcon className="icon" />
-                    </a>
-                  </div>
+                <br />
+                <div className="about">
+                  <p>
+                    Wechat is one of the projects which I am the most proud of I
+                    learned a lot from this starting from adding databases using
+                    <code> firebase</code> adding google auth using firebase
+                    using <code>react reducers</code>,{" "}
+                    <code>react routers</code> it was a great project and I
+                    enjoyed the most while building it
+                  </p>
+                </div>
+                <br />
+                <div className="tags">
+                  <span>ReactJs</span>
+                  <span>Firebase</span>
+                  <span>NodeJs</span>
+                  <span>MongoDb</span>
+                </div>
+                <br />
+                <div className="gotoContainer">
+                  <a className="goto" href="https://github.com/Kuro0911/WeChat">
+                    <GitHubIcon className="icon" />
+                  </a>
+                  <a className="goto" href="https://wechat-bykuro.web.app/">
+                    <LaunchIcon className="icon" />
+                  </a>
                 </div>
               </div>
-            </Tooltip>
+            </div>
+            {/* </Tooltip> */}
           </ThemeProvider>
         </Carousel.Item>
       </Carousel>

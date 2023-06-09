@@ -31,8 +31,8 @@ export const Contact = () => {
                 <a href="https://www.linkedin.com/in/dhananjai-sharma09/">
                   LinkedIn
                 </a>{" "}
-                or <a href="https://github.com/Kuro0911">Discord</a> at any time
-                and ill try my best to get back to you ASAP
+                or <a href="https://discord.com">Discord (KURO#1264)</a> at any
+                time and ill try my best to get back to you ASAP
               </text>
             </p>
             <p>

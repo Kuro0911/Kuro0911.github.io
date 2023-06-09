@@ -28,9 +28,9 @@ export const GreetContainer = styled.div`
     font-size: 1vw;
   }
   @media screen and (max-width: 900px) {
-    margin-left: 5%;
+    margin-left: 2em;
     text {
-      font-size: 3vw;
+      font-size: 5vw;
       font-family: monospace;
       color: #64ffda;
     }
@@ -40,13 +40,14 @@ export const GreetContainer = styled.div`
   }
   @media screen and (max-width: 470px) {
     text {
-      font-size: 4vw;
+      font-size: 1.5rem;
       font-family: monospace;
       color: #64ffda;
     }
     .jp {
-      font-size: 3.5vw;
+      font-size: 1.5rem;
     }
+    margin-bottom: 3em;
   }
 `;
 export const NameContainer = styled.div`
@@ -99,7 +100,7 @@ export const DesContainer = styled.div`
     font-size: 1.6vw;
   }
   @media screen and (max-width: 900px) {
-    margin-left: 5%;
+    margin-left: 2em;
     text {
       font-size: 4vw;
     }
@@ -109,10 +110,10 @@ export const DesContainer = styled.div`
   }
   @media screen and (max-width: 470px) {
     text {
-      font-size: 5vw;
+      font-size: 1.5rem;
     }
     .jp {
-      font-size: 4.6vw;
+      font-size: 1.5rem;
     }
   }
 `;
